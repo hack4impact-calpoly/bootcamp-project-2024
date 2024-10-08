@@ -1,0 +1,45 @@
+.blogPage {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pageTitle,
+.pageSubtitle {
+  display: flex;
+  justify-content: center;
+  font-family: Inter;
+}
+
+.pageTitle {
+  font-size: 40px;
+}
+
+.blog .blogList {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
+
+.blogPreview {
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 2%;
+  column-gap: 5px;
+  width: 100%;
+}
+
+.blogImage {
+  height: 30%;
+  width: 30%;
+
+  /* max-height: 400px;
+  max-width: 600px; */
+}

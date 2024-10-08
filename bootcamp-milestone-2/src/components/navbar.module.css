@@ -1,0 +1,66 @@
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 5%;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  background-color: var(--cg-black);
+  color: var(--cg-white);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1%;
+
+  /* Debug border */
+  /* border: solid red; */
+}
+
+.navList {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right: calc(5% - 20px);
+  list-style: none;
+
+  /* Debug border */
+  /* border: solid blue; */
+}
+
+.navbar a {
+  color: var(--cg-white);
+  font-weight: bold;
+  margin: 0 12px;
+  text-decoration: none;
+  letter-spacing: 2px;
+
+  font-family: Inter;
+}
+
+.navbar a:hover {
+  color: var(--cg-blue);
+  text-decoration: underline;
+}
+
+.navbar a:active {
+  color: var(--cg-blue);
+}
+
+.logo {
+  position: relative;
+  left: calc(5% - 20px);
+  padding: 0;
+  margin: 0.7rem 0;
+
+  font-size: 20pt;
+}
+
+.logo a {
+  margin: 0;
+}

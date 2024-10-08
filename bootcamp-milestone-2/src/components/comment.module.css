@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  padding: 10px;
+
+  background-color: white;
+  /* border-color: #bbb;
+  border-width: 3px; */
+}
+
+.user {
+  display: flex;
+  flex: 1;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.comment {
+  margin: 4px 0 4px 10px;
+  flex-wrap: wrap;
+
+  font-size: 16px;
+  font-style: italic;
+}
+
+.time {
+  flex: 1;
+  font-size: 12px;
+}

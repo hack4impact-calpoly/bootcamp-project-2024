@@ -1,0 +1,28 @@
+:root {
+  /* variables */
+  --cg-black: rgb(30, 32, 32);
+  --cg-blue: rgb(36, 94, 255);
+  --cg-grey: rgb(243, 243, 243);
+  --cg-white: rgb(255, 255, 255);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    #68a3d0,
+    #b3e0f2
+  ); /* Slightly darker blue gradient background */
+  background-attachment: fixed;
+  color: #333; /* Darker text color for better visibility */
+  font-family: Arial, sans-serif;
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: Inter;
+}
+

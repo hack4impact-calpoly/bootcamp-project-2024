@@ -1,0 +1,41 @@
+.blogPreview {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center, space-evenly;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 10px;
+  column-gap: 5px;
+  width: 50%;
+}
+
+.blogPreviewTitle {
+  flex: 2;
+  margin: 2% auto;
+}
+
+.blogPreviewInfo {
+  flex: 1;
+  flex-direction: row;
+  /* margin: auto; */
+}
+
+.blogPreviewPic {
+  display: flex;
+  flex: 2;
+  width: 80%;
+  object-fit: contain;
+  height: auto;
+  margin: auto;
+}
+
+.blogPreviewDescription {
+  flex: 3;
+  margin-left: 10%;
+}
+
+.blogPreviewDate {
+  flex: 1;
+  margin-left: 10%;
+}

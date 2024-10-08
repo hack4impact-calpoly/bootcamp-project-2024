@@ -1,0 +1,108 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pageTitle {
+  margin: 1% auto;
+}
+
+.pageContent {
+  display: flex;
+  flex-direction: row;
+
+  width: 70%;
+  margin: auto;
+  margin-top: 1%;
+
+  /* debugging */
+  /* border-color: white;
+  border-width: 3px; */
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0 auto;
+
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+
+  /* debugging */
+  /* border-color: black;
+  border-width: 3px; */
+}
+
+.contactForm label {
+  display: block;
+  margin-bottom: 8px;
+  width: 100%;
+
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: bold;
+
+  /* debugging */
+  /* border-color: red;
+  border-width: 3px; */
+}
+
+.contactForm input,
+.contactForm textarea {
+  display: flex;
+  width: 100%;
+  border-radius: 7px;
+  text-indent: 2%;
+  font-size: 16px;
+  font-family: Inter;
+  height: 42px;
+
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
+.contactForm textarea {
+  resize: none;
+}
+
+.contactForm button {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-self: center;
+
+  background-color: #eee;
+  border-radius: 7px;
+  padding: 7px;
+  font-size: 18px;
+
+  /* debugging */
+  /* border-color: green;
+  border-width: 3px; */
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.links .linksButtons {
+  background-color: #eee;
+  width: 120px;
+  font-size: 24px;
+  margin-top: 20px;
+  padding: 7px 0;
+
+  align-self: center;
+
+  border-color: #eee;
+  border-radius: 3px;
+}

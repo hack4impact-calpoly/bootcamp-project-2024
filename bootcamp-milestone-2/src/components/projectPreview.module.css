@@ -1,0 +1,55 @@
+.project {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 70%;
+  height: fit-content;
+  margin: auto;
+  column-gap: 10px;
+}
+
+.projectImage {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  margin: auto;
+
+  /* Debug border */
+  /* border: 2px solid black; */
+}
+
+.projectDetails {
+  display: flex;
+  background-color: var(--cg-white);
+  width: 30%;
+  height: 100%;
+  flex-shrink: 1;
+  padding: 0 20px;
+  margin: auto 2%;
+  line-height: 1.5;
+  overflow: auto;
+
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  /* Debug border */
+  /* border: 2px solid green; */
+}
+
+.projectDetails a {
+  color: var(--cg-black);
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.projectDetails a:hover {
+  color: var(--cg-blue);
+  text-decoration: underline;
+}
+
+.projectName {
+  font-weight: bold;
+  font-size: 20px;
+}
