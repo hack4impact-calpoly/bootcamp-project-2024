@@ -4,23 +4,16 @@ This is how we will be tracking your milestones throughout bootcamp! By the end 
 
 ---
 
-## Setup:
+## Milestone 1 Form
 
-0. Click on the fork button on the top right and create a fork
-1. Click on the green <> Code button above the file list.
-2. Go to the "Local" tab
-3. Copy the HTTPS link
-4. Create a folder called **H4I**
-5. Open the **H4I** folder in your terminal
-6. Type `git clone` and paste the HTTPS link
-7. Press Enter, then `cd` into your cloned repository
+## Developer: Ivan Torriani
 
-## Creating a PR:
+## Closes #
+87cbe4ae017d7953c3432e0c26f5377addb4add5
 
-1. Push all changes to your remote fork
-2. Go to the "Pull requests" tab in your GitHub repo
-3. Create a pull request with your changes
-   a. Double check the base is the main bootcamp repo!
-4. Fill out the PR template description!!!
-5. Assign the engineering team as code reviewers
-6. Link the milestone issue to the PR
+### Pull Request Summary:
+
+I'm submitting my Milestone 1 take-home for review by the team. Thank you for all the effort that made this process super enjoyable!
+
+### Special Instructions:
+n/a
