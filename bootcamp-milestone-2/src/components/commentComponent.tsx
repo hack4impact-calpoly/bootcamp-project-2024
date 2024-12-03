@@ -12,7 +12,7 @@ function parseCommentTime(time: Date){
 
 export default function Comment({comment}: CommentProps) {
     return (
-        <div>
+        <div className="comment">
             <h4>{comment.user}</h4>
             <p>{comment.content}</p>
             <span>{parseCommentTime(comment.time)}</span>

@@ -94,3 +94,19 @@ h1.page-title {
     height: 200%;
     width: 100%;
   }
+
+.blog-comments {
+  width: 80%;
+}
+
+.comment {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  background-color: #ebebeb;
+  padding: 1px 20px 20px 20px;
+  margin-bottom: 20px;
+  width: 75%;
+  text-align: left;
+
+}

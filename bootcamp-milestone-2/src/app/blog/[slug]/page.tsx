@@ -65,8 +65,6 @@ export default async function Blog({ params: {slug} }: Props) {
         <main>
             <h1 className="page-title">404 - Blog Not Found</h1>
 
-
-
         </main>
     );
 
