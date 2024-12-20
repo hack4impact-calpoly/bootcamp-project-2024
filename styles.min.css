@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(220, 185, 252);
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+main {
+  padding: 0 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS for navigation bar */
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  background-color: rgb(255, 255, 255);
+  color: rgb(235, 70, 147);
+  padding: 0px 10px;
+
+  border: 3px solid rgb(106, 16, 94); 
+  border-radius: 10px; 
+  
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right: 30px;
+  list-style: none;
+}
+
+.navbar a {
+  color: rgb(106, 16, 94);
+  font-weight: bold;
+  margin: 0 12px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+
+/* CSS for page footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(228, 90, 180);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+img {
+  border: 5px solid rgb(255, 255, 255);  
+  border-radius: 15px;      
+  padding: 5px;             
+}
+h1 {
+  color: rgb(225, 105, 193);
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.about {
+  display: flex;           
+  justify-content: center;   
+  align-items: center;       
+  gap: 20px;                 
+  flex-wrap: wrap;           
+}
+
+.about-image img {
+  width: 200px;             
+  height: auto;              
+}
+.resume-page {
+  background-color: white;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.resume-page .section {
+  margin-bottom: 30px; 
+}
+
+.resume-page .section-title h2 {
+  border-bottom: 2px solid #6A105E;
+  padding-bottom: 5px;
+  color: #6A105E;
+  font-size: 24px;
+}
+
+.resume-page .entry-title {
+  color: #6A105E;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.resume-page .entry-info {
+  font-size: 16px;
+  color: #555;
+}
+
+.resume-page ul {
+  padding-left: 20px;
+}
+
+.resume-page ul.skill-list,
+.resume-page ul.course-list {
+  list-style: disc;
+  margin-top: 10px;
+}
+
+.resume-page ul li {
+  font-size: 16px;
+  color: #333;
+}
+.resume-page a[href$=".pdf"] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6A105E;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.resume-page a[href$=".pdf"]:hover {
+  background-color: #E45AB4;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  padding: 80px 20px 20px; 
+}
+
+.contact-page h1 {
+  margin-top: 0;  
+  text-align: center; 
+  width: 100%; 
+  color: rgb(106, 16, 94); 
+  font-size: 2.5rem; 
+}
+
+/* Blog Post Container Styling */
+.blog-post {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 2px solid rgb(106, 16, 94);
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  max-width: 900px;
+  margin: 20px auto; 
+
+/* Blog Title */
+.blog-post h1 {
+  color: rgb(106, 16, 94); 
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog Image */
+.blog-post img {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+/* Blog Description */
+.blog-post p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgb(85, 85, 85);
+  margin-top: 15px;
+}
+
+/* Make sure the blog-container aligns nicely with the rest of the page */
+#blog-container {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+}
