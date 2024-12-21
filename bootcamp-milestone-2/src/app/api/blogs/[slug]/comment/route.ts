@@ -11,10 +11,20 @@ type IParams = {
 }
 
 export async function POST(req: NextRequest, { params }: IParams) {
+
+    // check that there is a comment
+    if (req.body == null) {
+        console.log("No Comment provided");
+        return NextResponse.json("Comment not provided.", {status: 500});
+    }
+
     await connectDB();
 
     const { slug } = params;
-    const comment: IComment = req.body;
+    const data = await req.json();
+
+
+    const comment: IComment = data.comment;
 
 
     try {
@@ -24,7 +34,6 @@ export async function POST(req: NextRequest, { params }: IParams) {
         ).orFail();
 
         
-
 
         return NextResponse.json(blog);
     } catch (err) {

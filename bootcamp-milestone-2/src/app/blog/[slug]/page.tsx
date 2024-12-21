@@ -2,12 +2,41 @@ import React from "react";
 import Image from "next/image";
 import {BlogObject} from "@/database/blogSchema";
 import Comment from "@/components/commentComponent";
+import { IComment } from "@/database/blogSchema";
 
 
 
 type Props = {
     params: { slug: string }
 }
+
+async function postComment(slug: string, comment: IComment){
+    try {
+
+        // CALL POST  
+        const res = await fetch(`http://localhost:3000/api/blogs/${slug}/comment`, {
+            method: "POST",
+            body: JSON.stringify(comment),
+            cache: "no-store"
+        });
+
+         // Check if the post request was successful
+         if (!res.ok) {
+            throw new Error("Failed to fetch blog!");
+        }
+
+        return res.json();
+
+
+
+    } catch (err: unknown) {
+        console.log(`error: ${err}`);
+        return null;
+    }
+
+
+}
+
 
 async function getBlog(slug: string) {
 
