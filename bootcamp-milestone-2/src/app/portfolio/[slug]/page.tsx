@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import style from "@/components/Portfolio/portfolio.module.css";
+import Comment from "@/components/Comment/Comment";
+import type { IComment } from "@/database/projectSchema";
 
 type Props = {
   params: { slug: string };
@@ -39,6 +41,16 @@ export default async function Portfolio({ params: { slug } }: Props) {
             />
             <div>
               <p>{project.description}</p>
+            </div>
+            <div className={style.commentsSection}>
+              <h3 className={style.commentsTitle}>Comments</h3>
+              {project.comments.length > 0 ? (
+                project.comments.map((comment: IComment, index: number) => (
+                  <Comment key={index} comment={comment} />
+                ))
+              ) : (
+                <p className={style.noComments}>No comments yet!</p>
+              )}
             </div>
           </div>
         </div>

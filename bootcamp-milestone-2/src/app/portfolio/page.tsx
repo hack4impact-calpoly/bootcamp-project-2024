@@ -27,6 +27,7 @@ export default async function Portfolio() {
             description={project.description}
             image={project.image}
             image_alt={project.image_alt}
+            comments={project.comments}
             key={project._id}
           />
         ))
