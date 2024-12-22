@@ -12,6 +12,11 @@ export default function CommentBox(props) {
 
 
     function handleClick(){
+        if (commentUser == "" || commentText == "") {
+            console.log("Cannot leave an empty comment or one without a name!");
+            return;
+        }
+
         const commentObject: IComment = {
             user: commentUser,
             content: commentText,
