@@ -9,7 +9,7 @@ export default function Navbar() {
     // NOTE: we use "class" in HTML but React is quirky so we have to 
     // change all the "class" to "className"
     <header className={style.navbar} >
-      <h1 className={style.logo}> Mio's Personal Website </h1>
+      <h1 className={style.logo}> Mio&apos;s Personal Website </h1>
       <nav>
         <ul className={style.navList}>
             <li>

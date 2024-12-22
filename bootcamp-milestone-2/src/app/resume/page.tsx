@@ -1,16 +1,15 @@
 import React from "react";
 import style from "./resume.module.css";
-import Link from "next/link";
 import Head from "next/head";
 
 export default function Resume() {
   return (
     <>
       <Head>
-        <title>Mio's Resume</title>
+        <title>Mio&apos;s Resume</title>
       </Head>
       <main className={style.resumeContainer}>
-        <h1 className={style.resumeTitle}>Mio's Resume</h1>
+        <h1 className={style.resumeTitle}>Mio&apos;s Resume</h1>
         <a href="/resume.pdf" download className={style.downloadLink}>
           Download Resume
         </a>
@@ -76,7 +75,7 @@ export default function Resume() {
         </section>
       </main>
       <footer className={style.footer}>
-        © 2023 Mio's Personal Website | All Rights Reserved
+        © 2023 Mio&apos;s Personal Website | All Rights Reserved
       </footer>
     </>
   );

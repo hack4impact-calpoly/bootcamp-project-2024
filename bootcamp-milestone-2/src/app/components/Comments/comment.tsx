@@ -10,9 +10,9 @@ type IComment = {
   time: Date;
 };
 
-type CommentProps = {
-  comment: IComment;
-};
+// type CommentProps = {
+//   comment: IComment;
+// };
 
 // parsing comment time
 function parseCommentTime(time: Date): string {

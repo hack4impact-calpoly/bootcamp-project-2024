@@ -12,6 +12,7 @@ export default async function PortfolioListPage() {
     <div className={styles.container}>
       <h1 className={styles.title}>Portfolio List</h1>
       <ul className={styles.list}>
+        {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
         {portfolios.map((portfolio: any) => (
           <li key={portfolio.slug} className={styles.listItem}>
             <small>{new Date(portfolio.date).toLocaleDateString()}</small>

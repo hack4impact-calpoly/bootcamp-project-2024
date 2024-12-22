@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import connectDB from "@/app/database/db";
 import Blog from "@/app/database/blogSchema";
 
 // export default async function handler(req: NextApiRequest, res: NextApiResponse) {

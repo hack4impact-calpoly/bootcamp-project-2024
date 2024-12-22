@@ -12,6 +12,7 @@ export default async function BlogListPage() {
     <div className={styles.container}>
       <h1 className={styles.title}>Blog List</h1>
       <ul className={styles.list}>
+      {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
         {blogs.map((blog: any) => (
           <li key={blog.slug} className={styles.listItem}>
             <small>{new Date(blog.date).toLocaleDateString()}</small>

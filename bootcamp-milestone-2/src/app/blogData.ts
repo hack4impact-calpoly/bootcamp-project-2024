@@ -23,33 +23,34 @@ export async function getBlogs(){
 			// send a response as the blogs as the message
 	    return blogs
 	} catch (err) {
-	    return null
+	    console.error("Error fetching blogs:", err); // Log the error
+    	return null;
 	}
 }
 
 // list of Blogs
-const blogs: Blog[] = [
-	{
-		title: "My first blog",
-        date: new Date("10-15-2023"),
-        description: "This is my first blog to write",
-        image: "/images/smiski.jpg",
-        image_alt: "image from home",
-        slug: "My first blog",
-        content: "My first blog. Hi :)",
-        comments: [],
-	},
-	{
-		title: "My second blog",
-        date: new Date("10-15-2023"),
-        description: "This is my second blog to write :)",
-        image: "/images/smiski.jpg",
-        image_alt: "image from home",
-        slug: "My second blog",
-        content: "My first blog. Hi :)",
-        comments: [],
-	},
-];
+// const blogs: Blog[] = [
+// 	{
+// 		title: "My first blog",
+//         date: new Date("10-15-2023"),
+//         description: "This is my first blog to write",
+//         image: "/images/smiski.jpg",
+//         image_alt: "image from home",
+//         slug: "My first blog",
+//         content: "My first blog. Hi :)",
+//         comments: [],
+// 	},
+// 	{
+// 		title: "My second blog",
+//         date: new Date("10-15-2023"),
+//         description: "This is my second blog to write :)",
+//         image: "/images/smiski.jpg",
+//         image_alt: "image from home",
+//         slug: "My second blog",
+//         content: "My first blog. Hi :)",
+//         comments: [],
+// 	},
+// ];
 
 
 

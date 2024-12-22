@@ -86,31 +86,33 @@ async function getBlog(slug: string) {
 }
 
 // Add comment function
-async function addComment(slug: string, user: string, comment: string) {
-  try {
-    const res = await fetch(`http://localhost:3000/api/Blog/${slug}/comment`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ user, comment }),
-    });
+// async function addComment(slug: string, user: string, comment: string) {
+//   try {
+//     const res = await fetch(`http://localhost:3000/api/Blog/${slug}/comment`, {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify({ user, comment }),
+//     });
 
-    if (!res.ok) {
-      throw new Error("Failed to add comment");
-    }
+//     if (!res.ok) {
+//       throw new Error("Failed to add comment");
+//     }
 
-    return res.json();
-  } catch (err) {
-    console.error(`Error adding comment: ${err}`);
-    return null;
-  }
-}
+//     return res.json();
+//   } catch (err) {
+//     console.error(`Error adding comment: ${err}`);
+//     return null;
+//   }
+// }
 
 export default function Blog({ params }: Props) {
+  {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
   const [blog, setBlog] = useState<any | null>(null);
-  const [comment, setComment] = useState<string>(""); // store the comment input
-  const [user, setUser] = useState<string>(""); // store the user name
+  //const [comment, setComment] = useState<string>(""); // store the comment input
+  //const [user, setUser] = useState<string>(""); // store the user name
+  {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
   const [comments, setComments] = useState<any[]>([]); // store the comments
 
   const { slug } = params;  // Directly access the `slug` parameter

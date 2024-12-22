@@ -12,6 +12,7 @@ export async function getPortfolios(){
 			// send a response as the blogs as the message
 	    return portfolios
 	} catch (err) {
-	    return null
+		console.error("Error fetching blogs:", err); // Log the error
+    	return null;
 	}
 }
