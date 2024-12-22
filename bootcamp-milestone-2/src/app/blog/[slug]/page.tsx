@@ -62,10 +62,12 @@
 "use client";
 import { useState, useEffect } from 'react';
 import Comment from "../../components/Comments/comment"; // Update the path as needed
+//import { use } from "react";
+import { useParams } from "next/navigation";
 
-type Props = {
-  params: { slug: string };  // Receive the slug as a parameter prop
-};
+// type Props = {
+//   params: { slug: string };  // Receive the slug as a parameter prop
+// };
 
 // Fetch blog by slug
 async function getBlog(slug: string) {
@@ -107,7 +109,7 @@ async function getBlog(slug: string) {
 //   }
 // }
 
-export default function Blog({ params }: Props) {
+export default function Blog() {
   {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
   const [blog, setBlog] = useState<any | null>(null);
   //const [comment, setComment] = useState<string>(""); // store the comment input
@@ -115,7 +117,9 @@ export default function Blog({ params }: Props) {
   {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
   const [comments, setComments] = useState<any[]>([]); // store the comments
 
-  const { slug } = params;  // Directly access the `slug` parameter
+  // const { slug } = use(params as { slug: string });  // Directly access the `slug` parameter
+  // const { slug } = React.use(params);  
+  const { slug } = useParams() as { slug: string }
 
   // Fetch blog data initially when the component is mounted or slug changes
   useEffect(() => {
