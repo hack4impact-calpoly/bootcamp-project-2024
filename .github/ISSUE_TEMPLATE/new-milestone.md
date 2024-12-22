@@ -1,10 +1,9 @@
 ---
 name: New Milestone
 about: Bootcamp milestone template
-title: ''
-labels: ''
-assignees: ''
-
+title: ""
+labels: ""
+assignees: ""
 ---
 
 # Milestone {num}
@@ -14,5 +13,6 @@ assignees: ''
 Notion link:
 
 ## Steps
- - 
- -
+
+-
+-

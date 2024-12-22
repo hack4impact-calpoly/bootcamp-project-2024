@@ -1,0 +1,8 @@
+.container {
+  box-shadow: blue 0px 0px 10x;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: bisque;
+  padding: 5px;
+}
