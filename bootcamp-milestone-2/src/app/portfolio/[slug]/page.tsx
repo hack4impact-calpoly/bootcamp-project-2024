@@ -51,7 +51,9 @@ async function addComment(slug: string, user: string, comment: string) {
 }
 
 export default function Portfolio() {
+  {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
   const [portfolio, setPortfolio] = useState<any | null>(null);
+  {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
   const [comments, setComments] = useState<any[]>([]); // Store the comments
   const [user, setUser] = useState<string>(""); // Store the user
   const [comment, setComment] = useState<string>(""); // Store the comment
