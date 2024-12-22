@@ -74,7 +74,7 @@ export async function POST(req: NextRequest) {
     const newComment = {
       user: user,
       comment: comment,
-      time: new Date(), // Set the current time for the comment
+      time: Date.now(), // Set the current time for the comment
     };
 
     // Push the new comment to the blog's comments array

@@ -1,7 +1,7 @@
 
 "use client";
 import { useState, useEffect } from 'react';
-import Comment from "../../components/Comments/comment"; // Update the path as needed
+import Comment from "../../components/Comments/comment";
 //import { use } from "react";
 import { useParams } from "next/navigation";
 
@@ -10,19 +10,19 @@ import { useParams } from "next/navigation";
 // };
 
 // Fetch blog by slug
-async function getBlog(slug: string) {
+async function getPortfolio(slug: string) {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/Blogs/${slug}`, {
-      cache: "no-store", // Avoid caching for dynamic data
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/Portfolios/${slug}`, {
+      cache: "no-store", 
     });
 
     if (!res.ok) {
-      throw new Error("Failed to fetch blog");
+      throw new Error("Failed to fetch portfolio");
     }
 
     return res.json();
   } catch (err) {
-    console.error(`Error fetching blog: ${err}`);
+    console.error(`Error fetching portfolio: ${err}`);
     return null;
   }
 }
@@ -30,7 +30,7 @@ async function getBlog(slug: string) {
 // Add comment function
 async function addComment(slug: string, user: string, comment: string) {
   try {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/Blogs/${slug}/comment`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/Portfolios/${slug}/comment`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -50,8 +50,8 @@ async function addComment(slug: string, user: string, comment: string) {
   }
 }
 
-export default function Blog() {
-  const [blog, setBlog] = useState<any | null>(null);
+export default function Portfolio() {
+  const [portfolio, setPortfolio] = useState<any | null>(null);
   const [comments, setComments] = useState<any[]>([]); // Store the comments
   const [user, setUser] = useState<string>(""); // Store the user
   const [comment, setComment] = useState<string>(""); // Store the comment
@@ -59,14 +59,14 @@ export default function Blog() {
   const { slug } = useParams() as { slug: string };
 
   useEffect(() => {
-    async function fetchBlogData() {
-      const blogData = await getBlog(slug);
+    async function fetchPortfolioData() {
+      const blogData = await getPortfolio(slug);
       if (blogData) {
-        setBlog(blogData);
+        setPortfolio(blogData);
         setComments(blogData.comments || []);
       }
     }
-    fetchBlogData();
+    fetchPortfolioData();
   }, [slug]);
 
   // Handle form submission to add a comment
@@ -83,9 +83,9 @@ export default function Blog() {
   
     if (newComment) {
       // Re-fetch blog data to ensure comments are updated
-      const blogData = await getBlog(slug);
-      if (blogData) {
-        setComments(blogData.comments || []);
+      const portfolioData = await getPortfolio(slug);
+      if (portfolioData) {
+        setComments(portfolioData.comments || []);
       }
       
       // Reset the form fields
@@ -94,16 +94,16 @@ export default function Blog() {
     }
   };
 
-  if (!blog) {
-    return <p>Blog not found. Please check the URL and try again.</p>;
+  if (!portfolio) {
+    return <p>Portfolio not found. Please check the URL and try again.</p>;
   }
 
   return (
     <div>
-      <h1>{blog.title}</h1>
-      <p>{new Date(blog.date).toLocaleDateString()}</p>
-      <p>{blog.description}</p>
-      <div>{blog.content}</div>
+      <h1>{portfolio.title}</h1>
+      <p>{new Date(portfolio.date).toLocaleDateString()}</p>
+      <p>{portfolio.description}</p>
+      {/* <div>{portfolio.content}</div> */}
 
       {/* Comments Section */}
       <div className="comments">

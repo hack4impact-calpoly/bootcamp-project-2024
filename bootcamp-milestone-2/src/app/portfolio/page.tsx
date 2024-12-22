@@ -19,7 +19,7 @@ export default async function PortfolioListPage() {
             <h2>{portfolio.title}</h2>
             <p>{portfolio.description}</p>
             {/* <p></p> */}
-            <a href={`/blogs/${portfolio.slug}`} className={styles.link}>
+            <a href={`/portfolio/${portfolio.slug}`} className={styles.link}>
               Read More
             </a>
           </li>
