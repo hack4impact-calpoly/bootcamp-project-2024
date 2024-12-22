@@ -9,7 +9,7 @@ export default function Home() {
           <div className="about-image">
             <Image
               src="/nickaanjahadi.jpg"
-              alt="An image of me, Nickaan Jahadi (This is on my LinkedIn)"
+              alt="An image of me, Nickaan Jahadi"
               layout="responsive"
               width={350}
               height={500}

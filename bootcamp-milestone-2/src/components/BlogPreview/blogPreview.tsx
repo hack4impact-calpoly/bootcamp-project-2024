@@ -1,5 +1,5 @@
 import React from "react";
-import type { Blog } from "../../database/blogSchema";
+import type { Blog } from "@/database/blogSchema";
 import Image from "next/image";
 import Link from "next/link";
 import style from "./blogPreview.module.css";

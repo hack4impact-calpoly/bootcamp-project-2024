@@ -57,9 +57,7 @@ export default async function Blog({ params: { slug } }: Props) {
                     <Comment key={index} comment={comment} />
                   ))
                 ) : (
-                  <p className={style.noComments}>
-                    No comments yet. Be the first to comment!
-                  </p>
+                  <p className={style.noComments}>No comments yet!</p>
                 )}
               </div>
             </div>

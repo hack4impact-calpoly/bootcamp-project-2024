@@ -2,7 +2,7 @@ import React from "react";
 import style from "./portfolio.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import type { Project } from "../../database/projectSchema";
+import type { Project } from "@/database/projectSchema";
 
 export default function Portfolio(props: Project) {
   return (

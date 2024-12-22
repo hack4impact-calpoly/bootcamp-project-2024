@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./comment.module.css";
-import type { IComment } from "../../database/blogSchema";
+import type { IComment } from "@/database/blogSchema";
 
 type CommentProps = {
   comment: IComment;
