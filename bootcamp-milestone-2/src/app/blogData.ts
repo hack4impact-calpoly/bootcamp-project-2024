@@ -1,19 +1,6 @@
 import connectDB from "./database/db"; // Import the database connection function
 import Blog from "./database/blogSchema"; // Import the Blog model
 
-
-// typescript type called Blog
-// export type Blog = {
-//     title: string;
-//     date: Date;
-//     description: string;
-//     image: string;
-//     image_alt: string;
-//     slug: string;
-// };
-
-// fetching from database
-
 export async function getBlogs(){
 	await connectDB() // function from db.ts before
 

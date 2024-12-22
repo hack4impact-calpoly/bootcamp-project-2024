@@ -1,55 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import Blog from "@/app/database/blogSchema";
 
-// export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-//   if (req.method !== 'POST') {
-//     return res.status(405).json({ error: 'Method not allowed' });
-//   }
-
-//   const { blogSlug } = req.query; // Extract the blogSlug from the query params
-//   const { user, comment } = req.body; // Extract user and comment from the request body
-
-//   if (!user || !comment) {
-//     return res.status(400).json({ error: 'Invalid input: user and comment are required.' });
-//   }
-
-//   try {
-//     await connectDB(); // Ensure the MongoDB connection is established
-
-//     // Find the blog by slug and add the comment
-//     const result = await Blog.findOneAndUpdate(
-//       { slug: blogSlug }, // Match the blog by slug
-//       {
-//         $push: {
-//           comments: {
-//             _id: new Date().toISOString(),
-//             user,
-//             comment,
-//             time: new Date().toISOString(),
-//           },
-//         },
-//       },
-//       { new: true, upsert: false } // Return the updated document, do not create a new one
-//     );
-
-//     if (!result) {
-//       return res.status(404).json({ error: 'Blog not found.' });
-//     }
-
-//     res.status(201).json({ message: 'Comment added successfully.', comments: result.comments });
-//   } catch (error) {
-//     console.error('Error adding comment:', error);
-//     res.status(500).json({ error: 'Internal Server Error' });
-//   }
-// }
-
-
 export async function POST(req: NextRequest) {
   try {
     // Get the body of the request
     const body = await req.json();
     
-    // Extract slug, user, and comment from the request body
+    // slug, user, and comment from the request body
     const { slug, user, comment } = body;
 
     // Validate incoming comment body
@@ -74,7 +31,7 @@ export async function POST(req: NextRequest) {
     const newComment = {
       user: user,
       comment: comment,
-      time: Date.now(), // Set the current time for the comment
+      time: Date.now(),
     };
 
     // Push the new comment to the blog's comments array

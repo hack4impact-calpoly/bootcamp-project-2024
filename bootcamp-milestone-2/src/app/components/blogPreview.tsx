@@ -1,10 +1,9 @@
 import React from 'react';
-//import type { Blog } from "../database/blogSchema"; // Import Blog type for typing the props\
 import Blog from "../database/blogSchema";
-import Image from 'next/image'; // Import Next.js Image component for optimization
+import Image from 'next/image';
 import style from './blogPreview.module.css';
 
-// The props parameter will be typed as Blog to ensure all properties are passed in correctly
+// was used for the blog preview
 export default function BlogPreview(props: Blog) {
   return (
     <div className={style.div}>

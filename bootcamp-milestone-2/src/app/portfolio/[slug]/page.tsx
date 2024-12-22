@@ -2,8 +2,8 @@
 "use client";
 import { useState, useEffect } from 'react';
 import Comment from "../../components/Comments/comment";
-//import { use } from "react";
 import { useParams } from "next/navigation";
+import styles from "./slug.module.css"
 
 // type Props = {
 //   params: { slug: string };  // Receive the slug as a parameter prop
@@ -101,29 +101,32 @@ export default function Portfolio() {
   }
 
   return (
-    <div>
-      <h1>{portfolio.title}</h1>
-      <p>{new Date(portfolio.date).toLocaleDateString()}</p>
-      <p>{portfolio.description}</p>
-      {/* <div>{portfolio.content}</div> */}
-
+    <div className={styles.container}>
+      <h1 className={styles.title}>{portfolio.title}</h1>
+      <p className={styles.date}>{new Date(portfolio.date).toLocaleDateString()}</p>
+      <p className={styles.description}>{portfolio.description}</p>
+  
       {/* Comments Section */}
-      <div className="comments">
+      <div className={styles.comments}>
         <h3>Comments:</h3>
         {comments.length > 0 ? (
-          comments.map((comment, index) => (
-            <Comment key={index} comment={comment} />
-          ))
+          <ul className={styles.commentList}>
+            {comments.map((comment, index) => (
+              <li key={index} className={styles.comment}>
+                <Comment comment={comment} />
+              </li>
+            ))}
+          </ul>
         ) : (
           <p>No comments yet.</p>
         )}
       </div>
-
+  
       {/* Comment Form */}
-      <div>
+      <div className={styles.form}>
         <h3>Leave a comment:</h3>
         <form onSubmit={handleCommentSubmit}>
-          <div>
+          <div className={styles.formGroup}>
             <label>
               Name:
               <input
@@ -134,7 +137,7 @@ export default function Portfolio() {
               />
             </label>
           </div>
-          <div>
+          <div className={styles.formGroup}>
             <label>
               Comment:
               <textarea
@@ -144,9 +147,12 @@ export default function Portfolio() {
               />
             </label>
           </div>
-          <button type="submit">Add Comment</button>
+          <button type="submit" className={styles.button}>
+            Add Comment
+          </button>
         </form>
       </div>
     </div>
   );
+  
 }

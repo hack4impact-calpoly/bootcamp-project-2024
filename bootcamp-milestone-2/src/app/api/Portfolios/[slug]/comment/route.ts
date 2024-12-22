@@ -6,7 +6,7 @@ export async function POST(req: NextRequest) {
     // Get the body of the request
     const body = await req.json();
     
-    // Extract slug, user, and comment from the request body
+    // slug, user, and comment from the request body
     const { slug, user, comment } = body;
 
     // Validate incoming comment body
@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
     const newComment = {
       user: user,
       comment: comment,
-      time: Date.now(), // Set the current time for the comment
+      time: Date.now(),
     };
 
     // Push the new comment to the blog's comments array

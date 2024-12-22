@@ -1,6 +1,7 @@
 import styles from "./blog.module.css";
 import { getBlogs } from "../blogData";
 
+// for the blog preview
 export default async function BlogListPage() {
   const blogs = await getBlogs();
 

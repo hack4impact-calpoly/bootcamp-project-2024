@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import styles from "./contact.module.css";
 
 const ContactPage = () => {
   const [status, setStatus] = useState<string | null>(null);
@@ -13,7 +14,7 @@ const ContactPage = () => {
     // Collect form data
     const form = e.target as HTMLFormElement;
     const formData = {
-      to_name: 'Mio', // Replace with the recipient's name
+      to_name: 'Mio', 
       from_name: form['name'].valueOf, // Get value of name field
       message: form['message'].value, // Get value of message field
     };
@@ -22,10 +23,10 @@ const ContactPage = () => {
 
     try {
       const result = await emailjs.send(
-        'service_0myvm2k',   // Replace with your EmailJS service ID
-        'template_3v4nxrm',  // Replace with your EmailJS template ID
+        'service_0myvm2k',   // EmailJS service ID
+        'template_3v4nxrm',  // EmailJS template ID
         formData,
-        'iL4LZOGlyB5AUufx-'    // Replace with your EmailJS public key
+        'iL4LZOGlyB5AUufx-'    // EmailJS public key
       );
 
       console.log('Email sent successfully:', result);
@@ -38,42 +39,23 @@ const ContactPage = () => {
   };
 
   return (
-    <div style={{ padding: '20px', maxWidth: '600px', margin: '0 auto' }}>
-      <h1>Contact Me</h1>
-      <form onSubmit={sendEmail}>
-        <label>
+    <div className={styles.container}>
+      <h1 className={styles.heading}>Contact Me</h1>
+      <form onSubmit={sendEmail} className={styles.form}>
+        <label className={styles.label}>
           Your Name:
-          <input
-            type="text"
-            name="name"
-            required
-            style={{ display: 'block', width: '100%', margin: '10px 0', padding: '10px' }}
-          />
+          <input type="text" name="name" required className={styles.input} />
         </label>
-        <label>
+        <label className={styles.label}>
           Message:
-          <textarea
-            name="message"
-            required
-            style={{ display: 'block', width: '100%', margin: '10px 0', padding: '10px', minHeight: '100px' }}
-          ></textarea>
+          <textarea name="message" required className={styles.textarea}></textarea>
         </label>
-        <button
-          type="submit"
-          style={{
-            display: 'block',
-            padding: '10px 20px',
-            backgroundColor: '#0070f3',
-            color: '#fff',
-            border: 'none',
-            cursor: 'pointer',
-          }}
-        >
+        <button type="submit" className={styles.button}>
           Send
         </button>
       </form>
       {status && (
-        <p style={{ marginTop: '20px', color: status.includes('successfully') ? 'green' : 'red' }}>
+        <p className={`${styles.status} ${status.includes('successfully') ? styles.success : styles.error}`}>
           {status}
         </p>
       )}

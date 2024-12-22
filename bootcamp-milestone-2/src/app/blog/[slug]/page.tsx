@@ -1,9 +1,9 @@
 
 "use client";
 import { useState, useEffect } from 'react';
-import Comment from "../../components/Comments/comment"; // Update the path as needed
-//import { use } from "react";
+import Comment from "../../components/Comments/comment"; 
 import { useParams } from "next/navigation";
+import styles from "./slug.module.css";
 
 // type Props = {
 //   params: { slug: string };  // Receive the slug as a parameter prop
@@ -84,7 +84,7 @@ export default function Blog() {
     const newComment = await addComment(slug, user, comment);
   
     if (newComment) {
-      // Re-fetch blog data to ensure comments are updated
+      // Refetch blog data
       const blogData = await getBlog(slug);
       if (blogData) {
         setComments(blogData.comments || []);
@@ -101,50 +101,48 @@ export default function Blog() {
   }
 
   return (
-    <div>
-      <h1>{blog.title}</h1>
-      <p>{new Date(blog.date).toLocaleDateString()}</p>
-      <p>{blog.description}</p>
-      <div>{blog.content}</div>
+    <div className={styles.container}>
+      <h1 className={styles.title}>{blog.title}</h1>
+      <p className={styles.date}>{new Date(blog.date).toLocaleDateString()}</p>
+      <p className={styles.description}>{blog.description}</p>
+      <div className={styles.content}>{blog.content}</div>
 
-      {/* Comments Section */}
-      <div className="comments">
+      <div className={styles.comments}>
         <h3>Comments:</h3>
-        {comments.length > 0 ? (
-          comments.map((comment, index) => (
-            <Comment key={index} comment={comment} />
-          ))
-        ) : (
-          <p>No comments yet.</p>
-        )}
+        <div className={styles.commentList}>
+          {comments.length > 0 ? (
+            comments.map((comment, index) => (
+              <div key={index} className={styles.commentItem}>
+                <Comment comment={comment} />
+              </div>
+            ))
+          ) : (
+            <p>No comments yet.</p>
+          )}
+        </div>
       </div>
 
-      {/* Comment Form */}
-      <div>
+      <div className={styles.commentForm}>
         <h3>Leave a comment:</h3>
         <form onSubmit={handleCommentSubmit}>
-          <div>
-            <label>
-              Name:
-              <input
-                type="text"
-                value={user}
-                onChange={(e) => setUser(e.target.value)}
-                required
-              />
-            </label>
-          </div>
-          <div>
-            <label>
-              Comment:
-              <textarea
-                value={comment}
-                onChange={(e) => setComment(e.target.value)}
-                required
-              />
-            </label>
-          </div>
-          <button type="submit">Add Comment</button>
+          <input
+            type="text"
+            className={styles.inputField}
+            value={user}
+            onChange={(e) => setUser(e.target.value)}
+            placeholder="Your Name"
+            required
+          />
+          <textarea
+            className={styles.textareaField}
+            value={comment}
+            onChange={(e) => setComment(e.target.value)}
+            placeholder="Your Comment"
+            required
+          />
+          <button type="submit" className={styles.submitButton}>
+            Add Comment
+          </button>
         </form>
       </div>
     </div>

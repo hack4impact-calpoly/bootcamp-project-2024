@@ -1,6 +1,3 @@
-
-// comment.tsx - The Comment Component
-
 import React from 'react';
 import styles from './comment.module.css'
 

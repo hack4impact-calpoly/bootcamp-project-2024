@@ -12,7 +12,7 @@ type Blog = {
     title: string;
     slug: string; 
     date: Date;
-    description: string; // for preview
+    description: string;
     content: string; // text content for individual blog page
     image: string; // url for string in public
     image_alt: string; // alt for image
@@ -40,8 +40,5 @@ const blogSchema = new Schema<Blog>({
 // defining the collection and model
 const Blog = mongoose.models['blogs'] ||
     mongoose.model('blogs', blogSchema);
-
-//const Blog = mongoose.models['blogs'] || mongoose.model<Blog & Document>('blogs', blogSchema);
-
 
 export default Blog;
