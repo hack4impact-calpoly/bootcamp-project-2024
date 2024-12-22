@@ -18,9 +18,18 @@ export default async function Portfolio() {
 
   return (
     <main>
-      <h1 className="page-title">Blogs</h1>
+      <h1 className="page-title">Portfolio</h1>
       {projects && projects.length > 0 ? (
-        projects.map((project) => <Port key={project._id} {...project} />)
+        projects.map((project) => (
+          <Port
+            name={project.name}
+            slug={project.slug}
+            description={project.description}
+            image={project.image}
+            image_alt={project.image_alt}
+            key={project._id}
+          />
+        ))
       ) : (
         <p>No projects available at the moment. Please check back later!</p>
       )}

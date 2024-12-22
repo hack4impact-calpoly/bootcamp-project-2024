@@ -21,7 +21,19 @@ export default async function Blog() {
     <main>
       <h1 className="page-title">Blogs</h1>
       {blogs && blogs.length > 0 ? (
-        blogs.map((blog) => <BlogPreview key={blog._id} {...blog} />)
+        blogs.map((blog) => (
+          <BlogPreview
+            title={blog.title}
+            slug={blog.slug}
+            date={blog.date}
+            description={blog.description}
+            content={blog.content}
+            image={blog.image}
+            image_alt={blog.image_alt}
+            comments={blog.comments}
+            key={blog._id}
+          />
+        ))
       ) : (
         <p>No blogs available at the moment. Please check back later!</p>
       )}
