@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import style from "@/components/BlogPreview/blogPreview.module.css";
+import Comment from "@/components/Comment/Comment";
+import type { IComment } from "@/database/blogSchema";
 
 type Props = {
   params: { slug: string };
@@ -48,6 +50,18 @@ export default async function Blog({ params: { slug } }: Props) {
             />
             <div className={style.blogDescription}>
               <p>{blog.content}</p>
+              <div className={style.commentsSection}>
+                <h3 className={style.commentsTitle}>Comments</h3>
+                {blog.comments.length > 0 ? (
+                  blog.comments.map((comment: IComment, index: number) => (
+                    <Comment key={index} comment={comment} />
+                  ))
+                ) : (
+                  <p className={style.noComments}>
+                    No comments yet. Be the first to comment!
+                  </p>
+                )}
+              </div>
             </div>
           </div>
         </div>
