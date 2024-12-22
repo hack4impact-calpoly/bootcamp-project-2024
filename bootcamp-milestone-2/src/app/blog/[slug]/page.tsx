@@ -1,32 +1,61 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { BlogType } from "@/database/blogSchema";
 import styles from "./page.module.css";
 import Comment from "@/components/Comment";
 import CommentForm from "@/components/commentForm";
+import React from "react";
+
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
-export default async function Blog({ params }: Props) {
-  const { slug } = await params;
-  async function getBlog(slug: string) {
-    try {
-      console.log(slug);
-      const res = await fetch(`http://localhost:3000/api/Blogs/${slug}`, {
-        cache: "no-store",
-      });
-      if (!res.ok) {
-        throw new Error("Something broke");
+export default function Blog({ params }: Props) {
+  const [blog, setBlog] = useState<BlogType | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  const { slug } = React.use(params);
+
+  // Fetch blog data in a useEffect
+  useEffect(() => {
+    async function fetchBlog() {
+      try {
+        setLoading(true);
+        const res = await fetch(`/api/Blogs/${slug}`, {
+          cache: "no-store",
+        });
+        if (!res.ok) {
+          throw new Error("Something broke while fetching the blog.");
+        }
+        const data = await res.json();
+        setBlog(data);
+      } catch (err) {
+        console.log(err);
+        setError("Something Broke");
+      } finally {
+        setLoading(false);
       }
-      return res.json();
-    } catch (err) {
-      console.log(err);
-      return null;
     }
+
+    if (slug) {
+      fetchBlog();
+    }
+  }, [slug]);
+
+  // Handle loading state
+  if (loading) {
+    return <p>Loading...</p>;
   }
 
-  const blog: BlogType = await getBlog(slug);
+  // Handle error state
+  if (error) {
+    return <p>{error}</p>;
+  }
 
+  // If no blog is found or returned
   if (!blog) {
     return (
       <div>
@@ -34,19 +63,13 @@ export default async function Blog({ params }: Props) {
       </div>
     );
   }
-  console.log(blog);
 
   return (
     <main>
       <h1 className="page-title">{blog.title}</h1>
       <div className={styles.container}>
         <p>{new Date(blog.date).toDateString()}</p>
-        <Image
-          src={blog.image}
-          alt={blog.image_alt}
-          width={500}
-          height={500}
-        ></Image>
+        <Image src={blog.image} alt={blog.image_alt} width={500} height={500} />
         <p>{blog.content}</p>
         <h3>Comments:</h3>
         {blog.comments.map((comment, index) => (
