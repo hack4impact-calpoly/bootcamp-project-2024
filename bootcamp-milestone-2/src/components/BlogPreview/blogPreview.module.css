@@ -91,3 +91,52 @@
   color: #666;
   font-style: italic;
 }
+
+.commentsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.addCommentButton {
+  padding: 8px 12px;
+  background-color: #3b3b9a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addCommentButton:hover {
+  background-color: #2a2a7d;
+}
+
+.commentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.commentForm input,
+.commentForm textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.commentForm button {
+  align-self: flex-end;
+  padding: 8px 12px;
+  background-color: #3b3b9a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.commentForm button:hover {
+  background-color: #2a2a7d;
+}
