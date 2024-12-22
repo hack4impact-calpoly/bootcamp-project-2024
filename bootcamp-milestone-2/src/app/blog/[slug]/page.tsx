@@ -97,7 +97,7 @@ export default function Blog() {
   };
 
   if (!blog) {
-    return <p>Blog not found. Please check the URL and try again.</p>;
+    return <p>Please wait one moment. If it does not load after a few moments, the blog not found. Please check the URL and try again.</p>;
   }
 
   return (

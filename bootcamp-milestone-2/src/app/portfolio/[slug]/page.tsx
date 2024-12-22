@@ -97,7 +97,7 @@ export default function Portfolio() {
   };
 
   if (!portfolio) {
-    return <p>Portfolio not found. Please check the URL and try again.</p>;
+    return <p>Please wait one moment. If it does not load after a few moments, the portfolio not found. Please check the URL and try again.</p>;
   }
 
   return (
