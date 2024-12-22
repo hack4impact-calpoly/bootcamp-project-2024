@@ -12,6 +12,18 @@ export type Blog = {
   comments: IComment[]; // array for comments
 };
 
+export type IComment = {
+  user: string;
+  comment: string;
+  time: Date;
+};
+
+const commentSchema = new Schema<IComment>({
+  user: { type: String, required: true },
+  comment: { type: String, required: true },
+  time: { type: Date, required: true, default: new Date() }
+});
+
 // mongoose schema
 const blogSchema = new Schema<Blog>(
   {
@@ -21,7 +33,8 @@ const blogSchema = new Schema<Blog>(
     description: { type: String, required: true },
     image: { type: String, required: true },
     image_alt: { type: String, required: true },
-    content: { type: String, required: true }
+    content: { type: String, required: true },
+    comments: [{ type: commentSchema }]
   },
   { collection: "blogs" }
 );
