@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import style from "@/components/Portfolio/portfolio.module.css";
@@ -83,9 +83,9 @@ export default function Project({ params }: Props) {
     }
   }
 
-    if (!project) {
-      return <h1 className="page-title">Loading...</h1>;
-    }
+  if (!project) {
+    return <h1 className="page-title">Loading...</h1>;
+  }
 
   return (
     <main>
