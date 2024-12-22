@@ -14,20 +14,22 @@ export default function BlogPreview(props: Blog) {
 
   return (
     <div className={style.blogContainer}>
-        <div className={style.blogPost}>
-          <Link href={"/blog/" + props.slug}><h3 className={style.blogTitle}> {props.title} </h3></Link>
-          <div className={style.blogContent}>
-            <Image
-              className={style.blogImage}
-              src={props.image}
-              alt={props.image_alt}
-              width={400}
-              height={500}
-            />
-            <p className={style.blogDescription}>{props.content}</p>
-            <p className={style.blogDate}>{formattedDate}</p>
-          </div>
+      <div className={style.blogPost}>
+        <Link href={"/blog/" + props.slug}>
+          <h3 className={style.blogTitle}> {props.title} </h3>
+        </Link>
+        <div className={style.blogContent}>
+          <Image
+            className={style.blogImage}
+            src={props.image}
+            alt={props.image_alt}
+            width={400}
+            height={500}
+          />
+          <p className={style.blogDescription}>{props.content}</p>
+          <p className={style.blogDate}>{formattedDate}</p>
         </div>
+      </div>
     </div>
   );
 }
