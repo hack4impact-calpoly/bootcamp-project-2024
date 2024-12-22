@@ -11,7 +11,7 @@ export default function Navbar() {
     <header>
       <nav className={style.navbar}>
         <h1 className={style.logo}>
-          <a href="/">personal website</a>
+          <Link href="/">personal website</Link>
         </h1>
         <ul className={style["nav-list"]}>
           <li>
