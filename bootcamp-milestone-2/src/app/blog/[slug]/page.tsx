@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import {BlogObject} from "@/database/blogSchema";
 import Comment from "@/components/commentComponent";
+import CommentBox from "@/components/commentBoxComponent";
 import { IComment } from "@/database/blogSchema";
 
 
@@ -11,6 +12,7 @@ type Props = {
 }
 
 async function postComment(slug: string, comment: IComment){
+    "use server"
     try {
 
         // CALL POST  
@@ -65,6 +67,8 @@ export default async function Blog({ params: {slug} }: Props) {
 
 
 
+
+
     return blog != null ? (
         <main>
             <h1 className="page-title">{blog.title}</h1>
@@ -83,6 +87,13 @@ export default async function Blog({ params: {slug} }: Props) {
             </div>
 
             <div className="blog-comments">
+                <h2>Comments</h2>
+
+                <h3>Leave a comment:</h3>
+                <CommentBox postComment={postComment} slug={slug}></CommentBox>
+                
+
+
                 {blog.comments.map((comment, index) => (
                         <Comment key={index} comment={comment} />
                     ))}
