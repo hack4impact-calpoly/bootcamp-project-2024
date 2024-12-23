@@ -22,7 +22,7 @@ export default function BlogCommentBox({ slug }: BlogCommentBoxProps) {
     
       const handleSubmit = async () => {
         try {
-          await fetch(`http://bootcamp-project-2024.vercel.app/api/Blogs/${slug}`, {
+          await fetch(`/api/Blogs/${slug}`, {
             method: 'POST',
             body: JSON.stringify({
               user: formData.name,
