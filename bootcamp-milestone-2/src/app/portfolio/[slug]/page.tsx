@@ -11,9 +11,12 @@ type Props = {
 
 async function getProject(slug: string): Promise<Project | null> {
   try {
-    const res = await fetch(`http://localhost:3000/api/projects/${slug}`, {
-      cache: "no-store"
-    });
+    const res = await fetch(
+      `https://bootcamp-project-2024-psi.vercel.app/api/projects/${slug}`,
+      {
+        cache: "no-store"
+      }
+    );
     if (!res.ok) {
       throw new Error("Failed to fetch project");
     }
@@ -59,7 +62,7 @@ export default function Project({ params }: Props) {
 
     try {
       const res = await fetch(
-        `http://localhost:3000/api/projects/${slug}/comment`,
+        `https://bootcamp-project-2024-psi.vercel.app/api/projects/${slug}/comment`,
         {
           method: "POST",
           headers: {

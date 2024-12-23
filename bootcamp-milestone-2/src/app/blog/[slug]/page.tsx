@@ -12,9 +12,12 @@ type Props = {
 async function getBlog(slug: string): Promise<Blog | null> {
   try {
     // This fetches the blog from an api endpoint that would GET the blog
-    const res = await fetch(`http://localhost:3000/api/blogs/${slug}`, {
-      cache: "no-store"
-    });
+    const res = await fetch(
+      `https://bootcamp-project-2024-psi.vercel.app/api/blogs/${slug}`,
+      {
+        cache: "no-store"
+      }
+    );
     // This checks that the GET request was successful
     if (!res.ok) {
       throw new Error("Failed to fetch blog");
@@ -61,7 +64,7 @@ export default function Blog({ params }: Props) {
 
     try {
       const res = await fetch(
-        `http://localhost:3000/api/blogs/${slug}/comment`,
+        `https://bootcamp-project-2024-psi.vercel.app/api/blogs/${slug}/comment`,
         {
           method: "POST",
           headers: {
