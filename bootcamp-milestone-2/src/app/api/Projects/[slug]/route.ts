@@ -2,9 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 import connectDB from "@/database/db";
 import projectSchema from "@/database/projectSchema";
 
-export async function GET(req: NextRequest, { params }: { params: { slug: string } }) {
+export async function GET(
+  req: NextRequest,
+  context: { params: Promise<{ slug: string }> }
+) {
   await connectDB();
-  const { slug } = params;
+  const { slug } = await context.params;
 
   try {
     const project = await projectSchema.findOne({ slug }).orFail();

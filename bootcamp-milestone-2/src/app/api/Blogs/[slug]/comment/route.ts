@@ -4,11 +4,10 @@ import blogSchema from "@/database/blogSchema";
 
 export async function POST(
   req: NextRequest,
-  { params }: { params: { slug: string } }
+  context: { params: Promise<{ slug: string }> }
 ) {
-  const { slug } = params;
-
   await connectDB();
+  const { slug } = await context.params;
 
   try {
     const body = await req.json();

@@ -3,9 +3,12 @@ import connectDB from "@/database/db";
 import blogSchema from "@/database/blogSchema";
 
 // If { params } looks confusing, check the note below this code block
-export async function GET(req: NextRequest, { params }: { params: { slug: string } }) {
-  await connectDB(); // function from db.ts before
-  const { slug } = params; // another destructure
+export async function GET(
+  req: NextRequest,
+  context: { params: Promise<{ slug: string }> }
+) {
+  await connectDB();
+  const { slug } = await context.params;
 
   try {
     const blog = await blogSchema.findOne({ slug }).orFail();
