@@ -12,7 +12,7 @@ async function postComment(slug: string, comment: IComment){
     try {
 
         // CALL POST  
-        const res = await fetch(`http://localhost:3000/api/blogs/${slug}/comment`, {
+        const res = await fetch(`api/blogs/${slug}/comment`, {
             method: "POST",
             body: JSON.stringify(comment),
             cache: "no-store"
@@ -39,7 +39,7 @@ async function postComment(slug: string, comment: IComment){
 async function getBlog(slug: string) {
 
     try {
-        const res = await fetch(`http://localhost:3000/api/blogs/${slug}`, {
+        const res = await fetch(`/api/blogs/${slug}`, {
             cache: "no-store",
         })
 
