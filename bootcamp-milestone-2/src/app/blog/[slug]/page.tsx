@@ -59,7 +59,7 @@ async function getBlog(slug: string) {
 
 export default async function Blog({ params }: { params: {slug: string}}){
 
-    const { slug } = params;
+    const { slug } = await params;
 
     const blog: BlogObject = await getBlog(slug);
 
