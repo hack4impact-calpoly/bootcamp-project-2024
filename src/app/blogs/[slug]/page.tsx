@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from "./page.module.css"
 import Comment from '@/components/comments';
+import BlogCommentBox from '@/components/blogCommentBox'
 
 type IComment = {
     user: string;
@@ -45,6 +46,7 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
                 height={300}/>
             </div>
             <div>
+                <BlogCommentBox slug={(await params).slug}/>
                 <h3>{blog.comments.length === 1 ? "1 Comment" : `${blog.comments.length + " Comments"}`}</h3>
                 <div className={styles.commentBox}>
                     {blog.comments.map((comment : IComment, index : number) => (
