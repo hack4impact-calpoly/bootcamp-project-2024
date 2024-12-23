@@ -4,13 +4,9 @@ import blogSchema from "@/database/blogSchema";
 import { IComment } from "@/database/blogSchema";
 
 
-type IParams = {
-    params: {
-        slug: string
-    }
-}
 
-export async function POST(req: NextRequest, { params }: IParams) {
+
+export async function POST(req: NextRequest) {
 
 
     // check that there is a comment
@@ -21,7 +17,7 @@ export async function POST(req: NextRequest, { params }: IParams) {
 
     await connectDB();
 
-    const { slug } = params;
+    const slug = req.nextUrl.pathname.split("/")[3];
     const data = await req.json();
 
 

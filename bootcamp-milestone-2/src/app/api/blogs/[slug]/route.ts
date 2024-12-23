@@ -2,15 +2,11 @@ import { NextRequest, NextResponse } from "next/server";
 import connectDB from "@/database/db";
 import blogSchema from "@/database/blogSchema";
 
-type IParams = {
-    params: {
-        slug: string
-    }
-}
 
-export async function GET(req: NextRequest, { params }: IParams) {
+
+export async function GET(req: NextRequest) {
     await connectDB();
-    const {slug} = params;
+    const slug = req.nextUrl.pathname.split("/")[3];
 
     try {
         const blog = await blogSchema.findOne({slug}).orFail();
