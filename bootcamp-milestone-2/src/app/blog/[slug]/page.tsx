@@ -12,7 +12,8 @@ async function postComment(slug: string, comment: IComment){
     try {
 
         // CALL POST  
-        const res = await fetch(`api/blogs/${slug}/comment`, {
+        const url = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : `http://localhost:3000`;
+        const res = await fetch(`${url}/api/blogs/${slug}/comment`, {
             method: "POST",
             body: JSON.stringify(comment),
             cache: "no-store"
@@ -39,7 +40,8 @@ async function postComment(slug: string, comment: IComment){
 async function getBlog(slug: string) {
 
     try {
-        const res = await fetch(`/api/blogs/${slug}`, {
+        const url = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : `http://localhost:3000`;
+        const res = await fetch(`${url}/api/blogs/${slug}`, {
             cache: "no-store",
         })
 
