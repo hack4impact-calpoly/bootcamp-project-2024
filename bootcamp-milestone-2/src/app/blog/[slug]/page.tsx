@@ -7,7 +7,7 @@ import { IComment } from "@/database/blogSchema";
 
 
 
-type Props = {
+type PageProps = {
     params: { slug: string }
 }
 
@@ -61,7 +61,7 @@ async function getBlog(slug: string) {
 
 }
 
-export default async function Blog({ params: {slug} }: Props) {
+export default async function Blog({ params: {slug} }: PageProps) {
 
     const blog: BlogObject = await getBlog(slug);
 
