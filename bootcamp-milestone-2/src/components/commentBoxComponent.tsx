@@ -3,9 +3,14 @@
 import React, {useState} from 'react';
 import { IComment } from '@/database/blogSchema';
 
+type CommentBoxProps = {
+    slug: string;
+    postComment: (slug: string, comment: IComment) => void;
+}
 
 
-export default function CommentBox(props) {
+
+export default function CommentBox(props: CommentBoxProps) {
 
     const [commentUser, setCommentUser] = useState("Name");
     const [commentText, setCommentText] = useState("Comment:");
