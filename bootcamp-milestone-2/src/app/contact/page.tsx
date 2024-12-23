@@ -34,8 +34,11 @@ export default function Contact() {
             <div className="contact-form">
                 <form id="contact-form" onSubmit={handleSubmit}>
                     <ul className="form-list">
+                        <h2>Name</h2>
                         <li><input name="name" type="text" id="name" value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} required></input></li>
+                        <h2>Email</h2>
                         <li><input name="email" type="email" id="email" value={formData.email}  onChange={(e) => setFormData({...formData, email: e.target.value})} required></input></li>
+                        <h2>Message</h2>
                         <li><textarea name="message" value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})}></textarea></li>
                         <li><input className="submit" type="submit" required></input></li>
                     
