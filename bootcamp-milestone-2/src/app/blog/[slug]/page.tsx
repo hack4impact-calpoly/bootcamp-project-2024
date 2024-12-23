@@ -40,7 +40,7 @@ async function postComment(slug: string, comment: IComment){
 async function getBlog(slug: string) {
 
     try {
-        const url = process.env.VERCEL_URL ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}` : `http://localhost:3000`;
+        const url = process.env.NEXT_PUBLIC_VERCEL_URL ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}` : `http://localhost:3000`;
         const res = await fetch(`${url}/api/blogs/${slug}`, {
             cache: "no-store",
         })
