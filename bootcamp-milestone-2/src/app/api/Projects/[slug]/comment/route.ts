@@ -6,8 +6,9 @@ export async function POST(
   req: NextRequest,
   { params }: { params: { slug: string } }
 ) {
-  await connectDB();
   const { slug } = params;
+
+  await connectDB();
 
   try {
     const body = await req.json();

@@ -2,9 +2,13 @@ import { NextRequest, NextResponse } from "next/server";
 import connectDB from "@/database/db";
 import blogSchema from "@/database/blogSchema";
 
-export async function POST(req: NextRequest, { params }: { params: { slug: string } }) {
-  await connectDB();
+export async function POST(
+  req: NextRequest,
+  { params }: { params: { slug: string } }
+) {
   const { slug } = params;
+
+  await connectDB();
 
   try {
     const body = await req.json();
