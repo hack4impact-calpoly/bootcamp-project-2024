@@ -5,14 +5,15 @@ import emailjs from "emailjs-com";
 
 export default function Contact() {
 
-    function handleSubmit(e){
+    function handleSubmit(e: React.FormEvent<HTMLFormElement>){
         e.preventDefault();
         const serviceID = 'service_e0wn32m';
         const templateID = 'template_feycn0m';
         const userID = "XcdprDfFrWcLSrayp";
 
 
-        emailjs.sendForm(serviceID, templateID, e.target, userID)
+
+        emailjs.sendForm(serviceID, templateID, e.currentTarget, userID)
         .then((result) => console.log("Email sent successfully! " + result.text), (error) => {console.log(error.text)});
 
         setFormData({name: "", email: "", message: ""})
