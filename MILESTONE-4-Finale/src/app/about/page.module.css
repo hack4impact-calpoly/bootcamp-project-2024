@@ -1,0 +1,86 @@
+/* Style the form container */
+#contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Style each label */
+#contact-form label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+}
+
+/* Style text inputs, select, and textarea */
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form select,
+#contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Focus effect for input fields */
+#contact-form input[type="text"]:focus,
+#contact-form input[type="email"]:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Style the submit button */
+#contact-form input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for the submit button */
+#contact-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Add a little space between form elements */
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form select,
+#contact-form textarea {
+  margin-bottom: 16px;
+}
+
+/* Style the textarea */
+#contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #contact-form {
+    padding: 15px;
+  }
+
+  #contact-form input[type="submit"] {
+    width: 100%;
+  }
+}

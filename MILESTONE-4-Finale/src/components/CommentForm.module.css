@@ -1,0 +1,57 @@
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Space between elements */
+  max-width: 500px;
+  margin: 2rem auto; /* Center form horizontally */
+  padding: 1.5rem;
+  background-color: #f9f9f9; /* Light background for form */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  border-color: #007bff; /* Highlight color */
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+  outline: none;
+}
+
+.comment-form textarea {
+  height: 120px; /* Default height */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.comment-form button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff; /* Primary button color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.comment-form button:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
