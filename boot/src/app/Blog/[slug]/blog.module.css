@@ -1,0 +1,54 @@
+
+ .blogPage {
+    min-height: 100vh;
+    padding: 2rem;
+    color: #fff;
+    font-family: sans-serif;
+  }
+  
+  .blogTitle {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .blogDate {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #eee; 
+  }
+  
+  .blogImage {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    border-radius: 8px; 
+    object-fit: cover;
+  }
+  
+  
+  .blogContent {
+    
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+  }
+  
+
+  .commentSection {
+    
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  
+  .commentSection h2 {
+    
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .noComments {
+    color: #ddd; 
+  }
+  
