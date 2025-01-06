@@ -1,0 +1,417 @@
+
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #2b2e33;
+
+
+}
+
+
+.nav-container{
+    width: 100%;
+    padding: 10px 10%;
+    background-color: #212529;
+    top: 0;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #ced4da;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.img {
+    border-radius: 10px;
+    size: 10px;
+
+}
+
+
+
+
+
+.home-page main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #3d4146;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-page .a-title{
+    color: #e9ecef;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.home-page .about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.home-page .about-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #1b1e21;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.home-page .about-text{
+    flex: 1;
+    padding-left: 20px;
+    color: #ced4da;
+}
+
+.home-page .about-text p {
+    margin-bottom: 1rem;
+}
+
+.home-page .about-text strong {
+    color: #e9ecef;
+}
+
+
+
+
+
+
+
+
+
+
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ced4da;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+
+nav ul li a:hover{
+    color: #212529;
+    border-radius: 40px;
+    background-color: #e9ecef;
+}
+
+
+
+
+
+
+.footer-cont{
+    background-color: #212529;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-cont {
+    color: #e9ecef;
+}
+
+h2{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.a-title{
+    color: #ced4da;
+}
+
+.about-text{
+    color: #e9ecef;
+}
+
+.section{
+    color: #ced4da;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfolio-page main{
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #3d4146;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-page .port{
+    color: #e9ecef;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.portfolio-page .project-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    border: 1px solid #1b1e21;
+    padding: 20px;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    background-color: #2b2e33;
+}
+
+.portfolio-page .project-portfolio a.Home img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-page .project-portfolio a.Home:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-page .project-details {
+    flex: 1;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #ced4da;
+}
+
+.portfolio-page .project-details p.project-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.portfolio-page .project-details p.project-description {
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-page .project-details a{
+    padding: 10px 20px;
+    background-color: #1b1e21;
+    border-radius: 10px;
+    color: #e9ecef;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.portfolio-page .project-details a:hover{
+    background-color: #212529;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.resume-title {
+    text-align: center;
+    color: #e9ecef;
+}
+
+
+.resume {
+    padding: 20px;
+    margin: 2rem 0;
+    background-color: #3d4146;
+    border-radius: 10px;
+}
+.section{
+    padding: 20px 0;
+    border-bottom: 2px solid #343a40;
+}
+.section:last-child{
+    border-bottom: 0;
+}
+
+.section-title{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.entry, .course-list, .skill-list{
+    margin-bottom: 20px;
+}
+
+.entry-title{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.entry-info, .entry-experience, .entry-description {
+    margin-left: 20px;
+}
+
+.course-list, .skill-list{
+    list-style-type: circle;
+}
+
+.down{
+    display: block;
+    margin: 1rem auto 2rem;
+    padding: 10px 20px;
+    background-color: #1b1e21;
+    color: #ced4da;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.down:hover{
+    background-color: #212529 ;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+.contact-page main {
+    padding: 2rem 5%;
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #3d4146;
+    border-radius: 10px;
+}
+
+.contact-page .contact-title {
+    text-align: center;
+    color: #e9ecef;
+    margin-bottom: 1.5rem;
+}
+
+.contact-page #contact-form {
+    padding: 1rem;
+}
+
+.contact-page .input-group, .contact-page .submit-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-page label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ced4da;
+}
+
+.contact-page input[type="text"], 
+.contact-page input[type="email"], 
+.contact-page textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #adb5bd;
+    border-radius: 5px;
+    background-color: #2b2e33;
+    color: #ced4da;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact-page textarea {
+    resize: vertical;
+}
+
+.contact-page input[type="submit"] {
+    border: none;
+    padding: 10px 20px;
+    background-color: #1b1e21;
+    color: #ced4da;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.contact-page input[type="submit"]:hover {
+    background-color: #212529;
+    transform: scale(1.05);
+}

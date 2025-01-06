@@ -1,0 +1,52 @@
+
+ .commentForm {
+    max-width: 500px;
+    margin: 2rem auto; 
+    background-color: #171717;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  
+  .formGroup {
+    margin-bottom: 1rem;
+  }
+  
+  .formLabel {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #eee;
+  }
+  
+  .formInput,
+  .formTextarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #9c7dff;  
+    border-radius: 5px;
+    background-color: #171717;  
+    color: #fff;               
+    font-family: "Josefin Sans", sans-serif; 
+    outline: none; 
+  }
+  
+  .formTextarea {
+    resize: vertical; 
+  }
+  
+  .submitButton {
+    background-color: #7e57c2; 
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-weight: 500;
+  
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #9c7dff;
+    transform: scale(1.05);
+  }
+  

@@ -1,0 +1,63 @@
+
+ .projectPortfolio {
+    display: flex;             
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;               
+    background-color: #171717; 
+    padding: 1rem;
+    border-radius: 8px;        
+    margin-bottom: 2rem;       
+    max-width: 600px;          
+    margin: 0 auto 2rem;       
+  }
+  
+  
+  .projectLink {
+    flex-shrink: 0;            
+  }
+  
+  
+  .projectImage {
+    display: block;
+    width: 100px;              
+    height: 100px;
+    object-fit: cover;         
+    border-radius: 8px;        
+  }
+  
+  .projectDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;               
+    flex: 1;                   
+  }
+  
+  .projectName {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .projectDescription {
+    margin: 0 0 1rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  .learnMore {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #7E57C2;  
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .learnMore:hover {
+    background-color: #9C7DFF;
+    transform: scale(1.05);
+  }
+  

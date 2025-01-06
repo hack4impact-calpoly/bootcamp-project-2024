@@ -1,0 +1,29 @@
+
+.blogPreview {
+  background-color: #171717; 
+  color: #fff;             
+  padding: 1rem;          
+  margin-bottom: 2rem;    
+  border-radius: 8px;     
+  max-width: 600px;       
+  margin: 0 auto;         
+  text-align: center;     
+}
+
+.blogPreview h3 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+}
+
+.blogImage {
+  width: 100%;
+  height: auto;          
+  border-radius: 8px;    
+  object-fit: cover;     
+  margin-bottom: 1rem;   
+}
+
+.blogPreview p {
+  margin-bottom: 0.5rem; 
+  line-height: 1.4;
+}

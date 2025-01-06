@@ -1,0 +1,30 @@
+
+.commentContainer {
+    background-color: #171717; 
+    color: #fff;               
+    padding: 1rem;            
+    margin-bottom: 1rem;      
+    border-radius: 8px;       
+    max-width: 600px;         
+    margin: 0 auto;           
+  }
+  
+  .commentUser {
+    margin: 0 0 0.5rem;       
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  
+  .commentText {
+    margin: 0 0 0.5rem;       
+    line-height: 1.4;
+    font-size: 0.95rem;
+  }
+  
+  
+  .commentTime {
+    font-size: 0.8rem;
+    color: #ccc;             
+  }
+  
