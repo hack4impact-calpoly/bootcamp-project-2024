@@ -1,0 +1,37 @@
+/* navbar.module.css */
+.navbar {
+  background-color: #102530; /* Teal */
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+.link {
+  color: #ffffff; /* White text */
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+.link:hover {
+  background-color: #789e66; /* Basil Green */
+  border-radius: 4px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 15px; /* Add spacing between logo and nav */
+}
+
+
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <style>
+      /* Styling the body background */
+      body {
+        background-color: #ffffff; /* White background */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* To hide the overflow from falling images */
+      }
+
+      /* Basic styling for the navigation */
+      nav {
+        background-color: #008080; /* Teal */
+        padding: 1em;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+      }
+
+      nav ul li {
+        display: inline;
+      }
+
+      nav ul li a {
+        color: #ffffff; /* White text */
+        text-decoration: none;
+        padding: 8px 16px;
+      }
+
+      nav ul li a:hover {
+        background-color: #789e66; /* Basil Green */
+        border-radius: 4px;
+      }
+
+      /* Styling for page content */
+      h1,
+      p {
+        color: #333;
+        text-align: center;
+        padding-top: 2em;
+      }
+
+      /* Textbox styling */
+      .description-box {
+        width: 50%;
+        margin: 20px auto;
+        padding: 20px;
+        border: 2px solid #008080; /* Teal border */
+        border-radius: 10px;
+        background-color: #f0f4f8; /* Iceberg background */
+        color: #333;
+        font-size: 1.2em;
+        text-align: center;
+      }
+
+      
+      footer {
+        background-color: #789e66; 
+        color: white;
+        text-align: center;
+        padding: 1em;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+      }
+
+      /* Styling the falling images */
+      .image-fall {
+        position: fixed;
+        top: -50px;
+        animation-name: fall;
+        animation-timing-function: linear;
+        animation-duration: 5s; 
+        animation-fill-mode: forwards; 
+      }
+
+      
+      .image-fall img {
+        width: 50px; 
+        height: auto;
+      }
+
+      /* Falling and disappearing animation */
+      @keyframes fall {
+        0% {
+          transform: translateY(0); 
+          opacity: 1; 
+        }
+        90% {
+          transform: translateY(100vh);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(100vh); 
+          opacity: 0; 
+        }
+      }
+
+      /* Random animation delay for each image */
+      .image-fall:nth-child(1) {
+        left: 10%;
+        animation-delay: 0s;
+      }
+
+      .image-fall:nth-child(2) {
+        left: 20%;
+        animation-delay: 0.2s;
+      }
+
+      .image-fall:nth-child(3) {
+        left: 30%;
+        animation-delay: 0.4s;
+      }
+
+      .image-fall:nth-child(4) {
+        left: 40%;
+        animation-delay: 0.6s;
+      }
+
+      .image-fall:nth-child(5) {
+        left: 50%;
+        animation-delay: 0.8s;
+      }
+
+      .image-fall:nth-child(6) {
+        left: 60%;
+        animation-delay: 0.1s;
+      }
+
+      .image-fall:nth-child(7) {
+        left: 70%;
+        animation-delay: 0.3s;
+      }
+
+      .image-fall:nth-child(8) {
+        left: 80%;
+        animation-delay: 0.5s;
+      }
+
+      .image-fall:nth-child(9) {
+        left: 90%;
+        animation-delay: 0.7s;
+      }
+
+      .image-fall:nth-child(10) {
+        left: 95%;
+        animation-delay: 0.9s;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <!-- Image elements for falling effect -->
+    <div class="image-fall"><img src="smiley.jpg" alt="Smiley Face" /></div>
+    <div class="image-fall"><img src="smiley.jpg" alt="Smiley Face" /></div>
+    <div class="image-fall"><img src="smiley.jpg" alt="Smiley Face" /></div>
+    <div class="image-fall"><img src="smiley.jpg" alt="Smiley Face" /></div>
+    <div class="image-fall"><img src="smiley.jpg" alt="Smiley Face" /></div>
+    <div class="image-fall"><img src="smiley.jpg" alt="Smiley Face" /></div>
+    <div class="image-fall"><img src="smiley.jpg" alt="Smiley Face" /></div>
+    <div class="image-fall"><img src="smiley.jpg" alt="Smiley Face" /></div>
+    <div class="image-fall"><img src="smiley.jpg" alt="Smiley Face" /></div>
+    <div class="image-fall"><img src="smiley.jpg" alt="Smiley Face" /></div>
+
+    <h1>Welcome to My Website</h1>
+    <p>This is the content of the home page.</p>
+
+    <!-- Description box -->
+    <div class="description-box">
+      Hello, I'm Henry, a third-year Computer Science major at Cal Poly. When I'm not coding, I love experimenting with coffee and tea to craft fun, unique drinks and explore new flavors.
+    </div>
+
+    <footer>&copy; 2024 My Website - All Rights Reserved</footer>
+  </body>
+</html>
+

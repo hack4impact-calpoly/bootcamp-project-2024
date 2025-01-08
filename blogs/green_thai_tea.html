@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Thai Tea Recipe</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #323131;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        overflow-x: hidden;
+      }
+      .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #44403c;
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding-top: 60px;
+      }
+      .sidebar a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 1.2em;
+        color: #ffd700;
+        display: block;
+        transition: 0.3s;
+      }
+      .sidebar a:hover {
+        color: #fff;
+      }
+      .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        font-size: 2em;
+      }
+      .openbtn {
+        font-size: 1.2em;
+        cursor: pointer;
+        background-color: #44403c;
+        color: #ffd700;
+        border: none;
+        padding: 10px 15px;
+        margin: 10px;
+        border-radius: 5px;
+      }
+      .openbtn:hover {
+        background-color: #555;
+      }
+      .content {
+        margin-left: 20px;
+        max-width: 800px;
+        margin: auto;
+        background: linear-gradient(135deg, #44403c, #1d1c1b);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+      }
+      img {
+        height: auto;
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        color: #ffd700;
+      }
+      p {
+        text-align: center;
+        font-size: 1.1em;
+        margin-bottom: 20px;
+      }
+      ul {
+        list-style-type: disc;
+        padding-left: 40px;
+        color: #e5e5e5;
+      }
+
+      li {
+        margin: 5px 0;
+        text-align: left;
+      }
+      h2 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 1.8em;
+        color: #ffcc00;
+      }
+      ol {
+        padding-left: 40px;
+        color: #e5e5e5;
+      }
+      ol li {
+        margin: 10px 0;
+      }
+      .footer {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 0.9em;
+        color: #b3b3b3;
+      }
+    </style>
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="../src/index.html">Home</a>
+      <a href="viet_coffee.html">Viet Coffee</a>
+      <a href="#">Blog Page 2</a>
+      <a href="#">Blog Page 3</a>
+    </div>
+
+    <button class="openbtn" onclick="openNav()">☰ Menu</button>
+
+    <div class="content">
+      <!--Section 1-->
+      <h1>Green Thai Tea Recipe</h1>
+      <p><em>Posted on Nov 15, 2024</em></p>
+      <img
+        src="greenthaitea.webp"
+        alt="A beautiful beach in Hawaii with clear blue water"
+      />
+      <!--Section 2-->
+      <ul>
+        <li>2 cups water</li>
+        <li>2 tablespoons green tea leaves</li>
+        <li>2 cardamom pods, crushed</li>
+        <li>1 stick cinnamon</li>
+        <li>2 tablespoons sugar (or to taste)</li>
+        <li>1/2 cup evaporated milk or coconut milk</li>
+        <li>Ice cubes (optional)</li>
+      </ul>
+      <!--Section 3-->
+      <h2>Instructions</h2>
+      <ol>
+        <li>Bring 2 cups of water to a boil in a medium-sized pot.</li>
+        <li>
+          Add green tea leaves, crushed cardamom pods, and the cinnamon stick to
+          the boiling water.
+        </li>
+        <li>
+          Reduce the heat and let the mixture simmer for 5 minutes to allow the
+          flavors to infuse.
+        </li>
+        <li>
+          Strain the tea into a heat-safe container to remove the tea leaves and
+          spices.
+        </li>
+        <li>
+          Stir in the sugar while the tea is still hot, adjusting to your
+          preferred sweetness.
+        </li>
+        <li>Let the tea cool slightly, then pour it into a glass.</li>
+        <li>Add the evaporated milk or coconut milk and stir well.</li>
+        <li>Serve warm, or pour over ice cubes for a refreshing cold drink.</li>
+      </ol>
+      <div class="footer">No longer have to wait in line at seaside</div>
+    </div>
+  </body>
+</html>

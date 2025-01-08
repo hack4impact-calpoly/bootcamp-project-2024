@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Henry Chen's CS Projects</title>
+    <style>
+      /* General page styling */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Navigation bar styling */
+      nav {
+        background-color: #008080; /* Teal */
+        padding: 1em;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+      }
+
+      nav ul li {
+        display: inline;
+      }
+
+      nav ul li a {
+        color: #ffffff; /* White text */
+        text-decoration: none;
+        padding: 8px 16px;
+      }
+
+      nav ul li a:hover {
+        background-color: #789e66; /* Basil Green */
+        border-radius: 4px;
+      }
+
+      /* Header section styling */
+      header {
+        background-color: #008080;
+        color: white;
+        padding: 40px;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5em;
+      }
+
+      header p {
+        font-size: 1.2em;
+        margin-top: 10px;
+      }
+
+      /* Project grid section */
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .project-item {
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .project-item img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+      }
+
+      .project-item h3 {
+        font-size: 1.5em;
+        color: #789e66; /* Basil Green */
+        margin-bottom: 10px;
+      }
+
+      .project-item p {
+        font-size: 1em;
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      .project-item a {
+        display: inline-block;
+        background-color: #008080; /* Teal */
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+      }
+
+      .project-item a:hover {
+        background-color: #789e66; /* Basil Green */
+      }
+
+      /* Contact button */
+      .contact-btn {
+        display: block;
+        background-color: #789e66; /* Basil Green */
+        color: white;
+        padding: 15px;
+        text-align: center;
+        margin: 40px auto;
+        width: 200px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.2em;
+      }
+
+      .contact-btn:hover {
+        background-color: #008080; /* Teal */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header section -->
+    <header>
+      <h1>Henry Chen's CS Projects</h1>
+      <p>
+        Welcome to my portfolio of computer science projects. Explore my work
+        below.
+      </p>
+    </header>
+
+    <!-- Project grid section -->
+    <section class="project-grid">
+      <div class="project-item">
+        <img src="ss1.png" alt="Project 1 Screenshot" />
+        <h3>Project 1: Employee Manager</h3>
+        <p>
+          A web-based Employee Manager application built using Java and Spring
+          Boot to manage employee records.
+        </p>
+        <a href="https://github.com/hchencp/EmployeeManager" target="_blank"
+          >View Code</a
+        >
+      </div>
+      <div class="project-item">
+        <img src="ss2.png" alt="Project 2 Screenshot" />
+        <h3>Project 2: Trip Planner App</h3>
+        <p>
+          A mobile app to plan trips with friends, including expense tracking,
+          group chat, and real-time notifications.
+        </p>
+        <a href="https://github.com/hchencp/PokemonMiniGame" target="_blank"
+          >View Code</a
+        >
+      </div>
+      <div class="project-item">
+        <img src="project3.jpg" alt="Project 3 Screenshot" />
+        <h3>WIP</h3>
+        <p>WIP</p>
+        <a href="#">View Code</a>
+      </div>
+    </section>
+
+    <!-- Contact button -->
+    <a href="contact.html" class="contact-btn">Contact Me</a>
+  </body>
+</html>
