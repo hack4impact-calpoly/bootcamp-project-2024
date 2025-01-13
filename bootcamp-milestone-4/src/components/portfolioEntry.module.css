@@ -1,0 +1,39 @@
+.entry {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.entry:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+
+.entry h3 {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.entry div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.entry p {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.entry a {
+  text-decoration: none;
+  color: inherit;
+}
