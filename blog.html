@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      /* Style for the large icons */
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin: 20px 0;
+      }
+      .social-icons a {
+        font-size: 48px;
+        color: #333;
+        text-decoration: none;
+      }
+      .social-icons a.linkedin {
+        color: #0077b5;
+      }
+      .social-icons a.github {
+        color: #333;
+      }
+      .social-title {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 40px;
+      }
+
+      /* Contact form styling */
+      #contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+      }
+
+      #contact-form label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      #contact-form input,
+      #contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      #contact-form input[type="submit"] {
+        background-color: #0077b5;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 15px;
+      }
+
+      #contact-form input[type="submit"]:hover {
+        background-color: #005b8e;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1><a href="index.html">JL's website</a></h1>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Welcome to My Blog</h1>
+      <div id="blog-container"></div>
+    </main>
+    <footer class="footer">
+      © 2024 My Personal Website | All Rights Reserved |
+    </footer>
+    <script type="module">
+      import { blogs } from "../blog/blog.js";
+
+      const blogContainer = document.getElementById("blog-container");
+
+      blogs.forEach((blog) => {
+        const blogPost = document.createElement("div");
+        blogPost.className = "blog-post";
+
+        blogPost.innerHTML = `
+          <img src="${blog.image}" alt="${blog.imageAlt}" />
+          <div class="blog-content">
+            <h2 class="blog-title"><a href="./${blog.slug}.html">${blog.title}</a></h2>
+            <p class="blog-date">${blog.date}</p>
+            <p class="blog-description">${blog.description}</p>
+          </div>
+        `;
+
+        blogContainer.appendChild(blogPost);
+      });
+    </script>
+  </body>
+</html>

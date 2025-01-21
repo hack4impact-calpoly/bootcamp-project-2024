@@ -1,0 +1,39 @@
+:root {
+  --cg-black: rgb(34, 34, 34);
+  --cg-blue: rgb(45, 105, 185);
+  --cg-grey: rgb(236, 240, 241);
+  --cg-white: rgb(255, 255, 255);
+  --cg-pearl: rgb(225, 230, 244);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(
+    45deg,
+    var(--cg-blue),
+    var(--cg-pearl),
+    var(--cg-grey)
+  );
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

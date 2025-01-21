@@ -1,0 +1,85 @@
+/* contact.module.css */
+
+.main {
+    text-align: center;
+  }
+  
+  .pageTitle {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  #contactForm {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  #contactForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  #contactForm input,
+  #contactForm textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box; /* Ensures padding does not affect width */
+  }
+  
+  #contactForm input[type="submit"] {
+    background-color: #0077B5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  #contactForm input[type="submit"]:hover {
+    background-color: #005b8e;
+  }
+  
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .socialIcons a {
+    font-size: 48px;
+    color: #333; /* Default color, adjust as needed */
+  }
+  
+  .socialIcons a.linkedin {
+    color: #0077B5; /* LinkedIn color */
+  }
+  
+  .socialIcons a.github {
+    color: #333; /* GitHub default, can adjust if needed */
+  }
+  /* contact.module.css */
+
+.footer {
+    text-align: center;
+    padding: 20px 10px; /* Adjust padding to provide more space */
+    color: #333; /* Set text color, assuming dark text for light background */
+    font-size: 14px; /* Adjust font size as necessary */
+    width: 100%; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  
