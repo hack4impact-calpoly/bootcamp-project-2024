@@ -1,0 +1,88 @@
+.pageTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 36px;
+  font-family: Georgia;
+  color: var(--white);
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--white);
+}
+
+.pageTitle h1 {
+  margin-bottom: 10px;
+}
+
+.pageTitle p {
+  font-size: 18px;
+  font-family: monospace;
+  margin-top: 0;
+}
+
+.pageTitle a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.pageTitle a:hover {
+  text-decoration: underline;
+}
+
+.resume {
+  width: 80%;
+  margin: 0 auto;
+  color: var(--white);
+  font-family: monospace;
+  line-height: 1.6;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: var(--white);
+  font-family: Georgia;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--white);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.resume p {
+  margin-bottom: 15px;
+}
+
+.resume ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.resume ul ul {
+  list-style: circle;
+}
+
+.resume li {
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .resume {
+    width: 90%;
+  }
+}

@@ -1,0 +1,70 @@
+/* src/app/contact/contact.module.css */
+.container {
+  padding: 2rem;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.pageTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 36px;
+  font-family: Georgia;
+  color: var(--cg-white);
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--cg-white);
+}
+
+.contactForm {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 50px;
+  background-color: #efe7e7;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .contactForm {
+    width: 90%;
+    max-width: none;
+  }
+}
+
+.contactForm label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #aca8a8;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #939191;
+}
+
+.contactForm input[type="submit"] {
+  background-color: var(--cg-black);
+  color: #050505;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactForm input[type="submit"]:hover {
+  background-color: var(--cg-blue);
+}

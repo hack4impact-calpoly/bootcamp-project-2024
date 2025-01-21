@@ -1,0 +1,216 @@
+<html lang="en">
+  <head>
+    <title>Anthony Mendoza | Resume</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <nav class="navbar">
+      <h1 class="logo"><a href="index.html">AM</a></h1>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="page-title">
+        <h1>Anthony Mendoza</h1>
+        <p>
+          | (510)660-2461 |
+          <a href="mailto:anthonymendoza321123@gmail.com"
+            >anthonymendoza321123@gmail.com</a
+          >
+          |
+          <a href="http://linkedin.com/in/anthonymend" target="_blank"
+            >LinkedIn</a
+          >
+          |
+          <a href="http://github.com/Amend37" target="_blank">GitHub</a>
+        </p>
+      </div>
+
+      <div class="resume">
+        <section class="section">
+          <h2 class="section-title">Education</h2>
+          <p>
+            <strong>California Polytechnic State University</strong> – San Luis
+            Obispo, CA<br />Bachelor of Arts in Computer Science, June 2026
+          </p>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Experience</h2>
+          <p>
+            <strong>Mobile Technologies Inc.</strong> – Richmond, CA<br />June
+            2024 – Present
+          </p>
+          <ul>
+            <li>
+              Provided technical support and troubleshooting, ensuring high
+              availability and reliability of MTI's products and services,
+              leading to improved service delivery and customer satisfaction.
+            </li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Projects</h2>
+          <ul>
+            <li>
+              <strong>Inter-Process Communication and Echo Server</strong> |
+              Vim, C, UNIX, SSH, Git – March 2024
+            </li>
+            <ul>
+              <li>
+                Developed a Unix-based application utilizing pipes and child
+                processes for inter-process communication (IPC) between client
+                and server.
+              </li>
+              <li>
+                Gained experience with system calls, low-level programming, and
+                resource management in the UNIX environment.
+              </li>
+            </ul>
+            <li>
+              <strong>Java Virtual Model Modding</strong> | Java, JUnit, PImage
+              – September 2023
+            </li>
+            <ul>
+              <li>
+                Developed an efficient A* pathfinding algorithm to enhance the
+                movement and navigation of in-game entities.
+              </li>
+              <li>
+                Designed and introduced new characters, objects, and
+                environments to enrich gameplay.
+              </li>
+            </ul>
+            <li>
+              <strong>Weather Monitoring System</strong> | Python, Zapier,
+              Adafruit IO – June 2024
+            </li>
+            <ul>
+              <li>
+                Integrated with Zapier to automate daily weather notifications,
+                using sensor data for personalized forecasts.
+              </li>
+              <li>
+                Leveraged Adafruit IO and weather APIs for real-time
+                environmental monitoring and data reporting.
+              </li>
+            </ul>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Involvement</h2>
+          <ul>
+            <li>
+              <strong
+                >Society of Hispanic Professional Engineers (SHPE
+                Member)</strong
+              >
+              – Focused on leadership, outreach, and community engagement.
+            </li>
+            <li>
+              <strong>ColorCoded by ColorStack (Member)</strong> – Provided
+              mentorship and networking opportunities for underrepresented
+              students in tech.
+            </li>
+            <li>
+              <strong>HyperSpeed (Software Developer Team Member)</strong> –
+              Programmed a drone using ArduPilot to enhance sensor control and
+              mobility.
+            </li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Technical Skills</h2>
+          <p><strong>Languages:</strong> Java, Python, C, HTML/CSS, Assembly</p>
+          <p>
+            <strong>Frameworks:</strong> ArduPilot, Unity, React, Pytest, JUnit
+          </p>
+          <p>
+            <strong>Developer Tools:</strong> Git, VS Code, PyCharm, IntelliJ
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">© 2024 Anthony Mendoza | All Rights Reserved</footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 100,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: "#ffffff",
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000",
+            },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+          },
+          size: {
+            value: 3,
+            random: true,
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "repulse",
+            },
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+          },
+          modes: {
+            repulse: {
+              distance: 100,
+            },
+            push: {
+              particles_nb: 4,
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
