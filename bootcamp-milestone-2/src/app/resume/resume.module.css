@@ -1,0 +1,98 @@
+/* General Styling */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #DEF4E8; /* Light green */
+}
+
+/* Title Section */
+.titleContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.button {
+  background-color: #9088C0; /* Soft lavender */
+  color: white;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #A890B8; /* Slightly darker lavender */
+}
+
+.titleImage {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Resume Page Styles */
+.resume {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 30px;
+  background-color: #F5F9FB; /* Light background */
+}
+
+.section {
+  padding: 20px;
+  background-color: #FFFFFF; /* White background */
+  border: 1px solid #A890B8; /* Soft lavender border */
+  border-radius: 10px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2F4F4F; /* Dark slate color */
+  margin-bottom: 15px;
+  border-bottom: 2px solid #A890B8; /* Soft lavender border */
+}
+
+.entry {
+  margin-bottom: 15px;
+}
+
+.entryTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2F4F4F; /* Dark slate color */
+}
+
+.entryInfo {
+  font-size: 14px;
+  color: #777; /* Light gray for info text */
+}
+
+.entryDescrip {
+  font-size: 14px;
+  color: #555; /* Darker gray for descriptions */
+}
+
+.skill-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.skillList li {
+  font-size: 14px;
+  color: #444;
+  padding: 6px 0;
+}
