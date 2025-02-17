@@ -1,0 +1,73 @@
+.projectPreviewContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.projectPreviewContainer:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.description {
+    font-size: medium;
+    text-align: center;
+    margin: 0;
+}
+
+.technologies {
+    text-align: center;
+    font-size: small;
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.technologies ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.techItem {
+    background-color: #e0f7fa;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: small;
+}
+
+.repositoryLink {
+    color: #007bff;
+    font-size: small;
+    text-decoration: none;
+}
+
+.repositoryLink:hover {
+    text-decoration: underline;
+}
