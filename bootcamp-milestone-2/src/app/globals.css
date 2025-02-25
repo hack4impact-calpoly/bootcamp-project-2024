@@ -1,0 +1,44 @@
+/* Custom Global Styles for Black-and-White Theme */
+:root {
+  --background-color: #000; /* Black background */
+  --text-color: #fff; /* White text */
+  --accent-color: #ffa500; /* Neon Green */
+  --link-hover-color: #ff8c00; /* LimeGreen for hover */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Inter", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.6;
+  margin: 0.5em 0;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}

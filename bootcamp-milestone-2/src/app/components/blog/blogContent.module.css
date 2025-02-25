@@ -1,0 +1,73 @@
+/* Blog Container */
+.blogContainer {
+    padding: 2rem 1rem 4rem; /* Reduced top padding, increased bottom padding */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Blog List Styling */
+  .blogList {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Spacing between blog posts */
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Blog Card Styling */
+  .blogCard {
+    background-color: #333;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blogCard:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Blog Image Styling (if used) */
+  .blogImage {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Blog Details Styling */
+  .blogName {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+  }
+  
+  .blogDescription {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Blog Link Styling */
+  .blogLink {
+    color: var(--accent-color);
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+  }
+  
+  .blogLink:hover {
+    color: var(--link-hover-color);
+    border-color: var(--link-hover-color);
+  }
+  

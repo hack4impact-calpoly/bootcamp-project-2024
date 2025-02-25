@@ -1,0 +1,140 @@
+.navigation {
+  background-color: #000;
+  color: #fff;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.navbar {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.nav-image {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.nav-link {
+  color: var(--text-color);
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--link-hover-color);
+}
+
+.menuWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: auto;
+  z-index: 101;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 102;
+}
+
+.hamburger .line {
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #000;
+  padding: 1em;
+  flex-direction: row;
+  z-index: 100;
+  transition: transform 0.3s ease;
+  visibility: hidden;
+}
+
+.menu.open {
+  visibility: visible;
+}
+
+.menu.hidden {
+  visibility: hidden;
+}
+
+.hamburger.open .line:nth-child(1) {
+  transform: rotate(45deg);
+  position: relative;
+  top: 8px;
+}
+
+.hamburger.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .line:nth-child(3) {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -8px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+  }
+
+  .menuWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    flex-direction: row;
+    gap: 2em;
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+
+  .menu.open {
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .menu.hidden {
+    visibility: hidden;
+    transform: translateX(100%);
+  }
+}

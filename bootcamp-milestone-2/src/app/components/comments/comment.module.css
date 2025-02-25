@@ -1,0 +1,26 @@
+.commentCard {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--card-background-color); /* Light background for individual comments */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .commentAuthor {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 8px;
+  }
+  
+  .commentContent {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 8px;
+  }
+  
+  .commentDate {
+    font-size: 0.9rem;
+    color: var(--secondary-text-color); /* Lighter text color for comment date */
+  }
+  
