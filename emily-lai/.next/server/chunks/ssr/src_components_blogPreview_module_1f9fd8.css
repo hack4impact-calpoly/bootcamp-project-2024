@@ -1,0 +1,28 @@
+/* [project]/src/components/blogPreview.module.css [app-client] (css) */
+.blogPreview-module___g6pSa__div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blogPreview-module___g6pSa__blog-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.blogPreview-module___g6pSa__blog-title {
+  margin-bottom: 10px;
+}
+
+.blogPreview-module___g6pSa__blog-description {
+  margin-bottom: 10px;
+}
+
+
+/*# sourceMappingURL=src_components_blogPreview_module_1f9fd8.css.map*/

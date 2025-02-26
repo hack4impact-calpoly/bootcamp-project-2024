@@ -1,0 +1,32 @@
+.commentCard {
+    background-color: #caa896;
+    color: #713911; 
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 0; 
+}
+
+.commentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.commentUser {
+    font-weight: bold;
+    margin: 0;
+}
+
+.commentTime {
+    font-size: 0.875em;
+    color: #713911;
+    margin: 0;
+}
+
+.commentText {
+    margin-top: 8px;
+    margin-bottom: 0;
+}

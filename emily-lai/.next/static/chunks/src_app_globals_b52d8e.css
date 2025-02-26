@@ -1,0 +1,107 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+html {
+  height: 100%;
+  font-family: Verdana, sans-serif;
+}
+
+body {
+  background-color: #faeee2;
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding: 0 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.about-text {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.about, .about-image img, img {
+  display: flex;
+  padding: 10%;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  resize: none;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 7%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #857269;
+  color: #857269;
+  padding: 0;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right: 30px;
+  list-style: none;
+}
+
+.navbar a {
+  color: #faece5;
+  font-weight: bold;
+  margin: 0 12px;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.nav-list a:hover {
+  color: #faece5;
+  text-decoration: underline;
+}
+
+.nav-list a:active {
+  color: #faece5;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fce6d9;
+  color: #6a4928;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+p {
+  align-items: center;
+}
+
+/*# sourceMappingURL=src_app_globals_b52d8e.css.map*/

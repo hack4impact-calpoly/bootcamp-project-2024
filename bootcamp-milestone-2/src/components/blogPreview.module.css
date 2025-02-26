@@ -1,0 +1,73 @@
+/* hack4impact */
+.imgWrapper img {
+  display: block;
+  width: 100%;
+  height: auto; 
+  border-radius: 8px;
+  max-width: 100%; 
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.textCenter p {
+  align-items: center;
+}
+
+.pageTitle {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  padding: 16px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: transform 0.2s;
+  width: 80vw;
+  margin: 16px auto; 
+  max-height: 20vh;
+}
+
+.div:hover {
+  transform: translateY(-5px);
+}
+
+.imgWrapper {
+  order: 2;
+  flex: 0 0 30%;
+  padding-left: 16px;
+}
+
+.contentWrapper {
+  order: 1;
+  flex: 1;
+}
+
+.title {
+  margin-top: 0; 
+}
+
+.date {
+  color: #888;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.link {
+  color: rgb(132, 94, 44);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

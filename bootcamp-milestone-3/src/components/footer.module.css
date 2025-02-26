@@ -1,0 +1,11 @@
+/* hack4impact */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fce6d9;
+  color: #6a4928;
+  width: 100%;
+  height: 2.5rem;
+}

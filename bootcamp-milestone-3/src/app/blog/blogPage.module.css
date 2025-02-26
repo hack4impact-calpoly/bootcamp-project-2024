@@ -1,0 +1,18 @@
+.commentsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.blogPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.blogImg {
+    max-height: 40vh;
+    width: auto;      
+}
