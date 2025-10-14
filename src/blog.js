@@ -2,7 +2,7 @@
 const Blogs = [
   {
     title: "Entry # 1",
-    date: "The date of the post",
+    date: "2025",
     description: "The text of the blog",
     image: "./imports/istockphoto-517188688-612x612.jpg",
     imageAlt: "A picture of a guy on a chair",
@@ -10,7 +10,7 @@ const Blogs = [
   },
   {
     title: "Entry # 2",
-    date: "The date of the post",
+    date: "2024",
     description: "The text of the blog",
     image: "./imports/landscape-with-a-lake-1493481278Ed8.jpg",
     imageAlt: "A picture of a guy on a chair",
@@ -18,7 +18,7 @@ const Blogs = [
   },
   {
     title: "Entry # 3",
-    date: "The date of the post",
+    date: "2023",
     description: "The text of the blog",
     image: "./imports/photo-1506744038136-46273834b3fb.jpg",
     imageAlt: "A picture of a guy on a chair",
@@ -26,7 +26,7 @@ const Blogs = [
   },
   {
     title: "Entry # 4",
-    date: "The date of the post",
+    date: "2022",
     description: "The text of the blog",
     image: "./imports/Yifeng-Ding-1800x1192.avif",
     imageAlt: "A picture of a guy on a chair",
