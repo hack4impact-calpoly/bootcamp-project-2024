@@ -1,0 +1,23 @@
+{
+  "name": "bootcamp-project-2024",
+  "version": "1.0.0",
+  "description": "This is how we will be tracking your milestones throughout bootcamp! By the end of bootcamp, you will have a fullstack personal portfolio website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylem148/bootcamp-project-2024.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kylem148/bootcamp-project-2024/issues"
+  },
+  "homepage": "https://github.com/kylem148/bootcamp-project-2024#readme",
+  "dependencies": {
+    "typescript": "^5.9.3"
+  }
+}
