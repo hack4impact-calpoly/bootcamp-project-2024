@@ -1,12 +1,10 @@
 "use strict";
-//Object.defineProperty(exports, "__esModule", { value: true });
-console.log("SOMETHINGS WORKING!");
 const Blogs = [
   {
     title: "Entry # 1",
     date: "The date of the post",
     description: "The text of the blog",
-    image: "./IMG_5318.jpeg",
+    image: "./imports/IMG_5318.jpeg",
     imageAlt: "A picture of a guy on a chair",
     slug: "https://example.com/blogs/how-to-build-a-react-application-in-2024",
   },
@@ -14,7 +12,7 @@ const Blogs = [
     title: "Entry # 2",
     date: "The date of the post",
     description: "The text of the blog",
-    image: "./IMG_5318.jpeg",
+    image: "./imports/IMG_5318.jpeg",
     imageAlt: "A picture of a guy on a chair",
     slug: "https://example.com/blogs/how-to-build-a-react-application-in-2024",
   },
@@ -22,7 +20,7 @@ const Blogs = [
     title: "Entry # 3",
     date: "The date of the post",
     description: "The text of the blog",
-    image: "./IMG_5318.jpeg",
+    image: "./imports/IMG_5318.jpeg",
     imageAlt: "A picture of a guy on a chair",
     slug: "https://example.com/blogs/how-to-build-a-react-application-in-2024",
   },
@@ -30,7 +28,7 @@ const Blogs = [
     title: "Entry # 4",
     date: "The date of the post",
     description: "The text of the blog",
-    image: "./IMG_5318.jpeg",
+    image: "./imports/IMG_5318.jpeg",
     imageAlt: "A picture of a guy on a chair",
     slug: "https://example.com/blogs/how-to-build-a-react-application-in-2024",
   },
