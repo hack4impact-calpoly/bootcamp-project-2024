@@ -46,27 +46,33 @@ const blogContainer = document.getElementById("card-list");
 
 if (blogContainer) {
   Blogs.forEach((blog) => {
+    //create image tag
     const image = document.createElement("img");
     image.src = blog.image;
     image.alt = blog.imageAlt;
 
+    //create article tag
     const article = document.createElement("article");
     article.classList.add("card");
 
+    //create card heading tag
     const header = document.createElement("header");
     header.classList.add("card-header");
 
+    //create date paragraph
     const paragraph = document.createElement("p");
     paragraph.textContent = blog.date;
 
+    //create title
     const header2 = document.createElement("h2");
     header2.textContent = blog.title;
 
+    //create the link
     const description = document.createElement("a");
     description.href = `./blogs/${blog.slug}.html`;
-    description.innerText = "Click Here To Veiw..."
-    
+    description.innerText = "Click Here To Veiw...";
 
+    //create insertion point, and append html
     const blog_image: HTMLImageElement = document.createElement("img");
     blog_image.classList.add("blog-image");
     blog_image.src = blog.image;
