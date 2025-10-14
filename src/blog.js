@@ -1,5 +1,5 @@
 "use strict";
-
+console.log("SOMETHINGS WORKING!");
 const Blogs = [
   {
     title: "Entry # 1",
@@ -45,12 +45,20 @@ if (blogContainer) {
     const header = document.createElement("header");
     header.classList.add("card-header");
     const paragraph = document.createElement("p");
-    paragraph.textContent = blog.title;
+    paragraph.textContent = blog.date;
     const header2 = document.createElement("h2");
     header2.textContent = blog.description;
+    const description = document.createElement("p");
+    description.textContent = blog.description;
+    const blog_image = document.createElement("img");
+    blog_image.classList.add("blog-image");
+    blog_image.src = blog.image;
+    blog_image.alt = blog.imageAlt;
     article.appendChild(header);
     header.appendChild(paragraph);
     header.appendChild(header2);
+    header.appendChild(description);
+    header.appendChild(blog_image);
     blogContainer.appendChild(article);
   });
 }
