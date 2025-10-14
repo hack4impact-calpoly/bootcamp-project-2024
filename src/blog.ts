@@ -62,10 +62,10 @@ if (blogContainer) {
     paragraph.textContent = blog.date;
 
     const header2 = document.createElement("h2");
-    header2.textContent = blog.description;
+    header2.textContent = blog.title;
 
     const description = document.createElement("p");
-    description.textContent = blog.description;
+    description.textContent = "Click to see the full text..";
 
     const blog_image: HTMLImageElement = document.createElement("img");
     blog_image.classList.add("blog-image");
