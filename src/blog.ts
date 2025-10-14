@@ -14,7 +14,7 @@ const Blogs: Blog[] = [
     description: "The text of the blog",
     image: "./imports/IMG_5318.jpeg",
     imageAlt: "A picture of a guy on a chair",
-    slug: "https://example.com/blogs/how-to-build-a-react-application-in-2024",
+    slug: "entry1",
   },
   {
     title: "Entry # 2",
@@ -22,7 +22,7 @@ const Blogs: Blog[] = [
     description: "The text of the blog",
     image: "./imports/IMG_5318.jpeg",
     imageAlt: "A picture of a guy on a chair",
-    slug: "https://example.com/blogs/how-to-build-a-react-application-in-2024",
+    slug: "entry2",
   },
   {
     title: "Entry # 3",
@@ -30,7 +30,7 @@ const Blogs: Blog[] = [
     description: "The text of the blog",
     image: "./imports/IMG_5318.jpeg",
     imageAlt: "A picture of a guy on a chair",
-    slug: "https://example.com/blogs/how-to-build-a-react-application-in-2024",
+    slug: "entry3",
   },
   {
     title: "Entry # 4",
@@ -38,7 +38,7 @@ const Blogs: Blog[] = [
     description: "The text of the blog",
     image: "./imports/IMG_5318.jpeg",
     imageAlt: "A picture of a guy on a chair",
-    slug: "https://example.com/blogs/how-to-build-a-react-application-in-2024",
+    slug: "entry4",
   },
 ];
 
@@ -62,8 +62,10 @@ if (blogContainer) {
     const header2 = document.createElement("h2");
     header2.textContent = blog.title;
 
-    const description = document.createElement("p");
-    description.textContent = "Click to see the full text..";
+    const description = document.createElement("a");
+    description.href = `./blogs/${blog.slug}.html`;
+    description.innerText = "Click Here To Veiw..."
+    
 
     const blog_image: HTMLImageElement = document.createElement("img");
     blog_image.classList.add("blog-image");
