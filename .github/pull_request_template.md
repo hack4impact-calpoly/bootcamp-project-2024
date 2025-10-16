@@ -1,4 +1,4 @@
-## Developer: {Full Name}
+## Developer: Piolo Santiago
 
 Closes #{ISSUE NUMBER HERE}
 
