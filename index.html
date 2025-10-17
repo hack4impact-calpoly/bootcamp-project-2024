@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vishal's Loft</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="logo">
+        <a href="index.html">VISHAL'S LOFT</a>
+      </h1>
+      <ul class="nav-list">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="resume.html">RESUME</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="floating-tile">
+        <img src="vshal.jpeg" alt="Vishal's Personal Logo" class="tile-image" />
+        <div class="tile-text">
+          <h2 class="tile-heading">Welcome to the Loft!</h2>
+          <p>
+            In case you haven't noticed already, I'm Vishal Murali Kannan, and
+            you're in my loft. Welcome! Argubaly the best Brawl Stars player on
+            the planet (and yes, I know that's a sad metric for success), I've 
+            been on the leaderboard twice. But, don't for a second think 
+            that I don't touch grass. In fact, you could argue that I touch it
+            too hard at times. I could not count the number of times I go for a
+            dive in spikeball only to end up with my face dug into the ground,
+            and the ball right where it was. However, I'll admit that Spikeball's a game of fun (Especially
+            when I fake my opponent with convincing taps ,:)) Oh, and I've also
+            played football (soccer for my American friends) for my school team.
+            In fact, we had an undefeated season for the past two tourneys in
+            HS.
+          </p>
+          <p>
+            Plus, did I forget to mention that I LOVE coding! No, really! I figured you
+            would've known it looking at the effort I put into making my loft,
+            but it's perfectly alright if you don't. :)
+          </p>
+          <div class="button-container">
+            <button class="cta-button" id="igButton">click here to view my instagram (shameless plug)</button>
+            <span id="igID" style="display:block; margin-top: 10px; color: #007bff;"></span>
+          </div>
+        </div>
+      </div>
+      <div class="floating-tile">
+        <img src="mbs1.JPG" class="tile-image" />
+        <div class="tile-text">
+          <h2 class="tile-heading">Summer Trip Back Home</h2>
+          <p>
+            Singapore, if you haven't known, is a tiny island country located on
+            the peninsular tip of Malaysia. In fact, Singapore is so small that
+            you'd have to look at the world map through a microscope to find
+            where it's located. It's a country where you could get from one end
+            to the other while watching a Coldplay concert (yikes!)... unless
+            you end up behind a truck doing 40 on the passing lane. Putting my
+            witty metaphors aside, I'll admit, it does get pretty hot out there.
+            Anyway, here's a pic of the famous Marina Bay Sands Hotel, which
+            I've taken about a thousand times considering Singapore's my home
+            for the past 12 years. (I love elderly women screaming at me for
+            taking a seat on the bus!)
+          </p>
+          <p>
+            Anyways, feel free to get in touch with me if you wanna learn more
+            about some places in Singapore left out by tour guides. 
+          </p>
+          <div class="button-container">
+            <button class="cta-button" id="sgButton">click here to discover more of SG</button>
+            <span id="sgID" style="display:block; margin-top: 10px; color: #007bff;"></span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">2025 Vishal's Loft | No Rights Reserved</footer>
+    <script>
+      const igButton = document.getElementById('igButton');
+      const originalText = igButton.textContent;
+      const hoverText = '@vchupd';
+      const igURL = 'https://www.instagram.com/vchupd/'; 
+
+      igButton.addEventListener('mouseenter', function() {
+        igButton.textContent = hoverText;
+      });
+
+      igButton.addEventListener('mouseleave', function() {
+        igButton.textContent = originalText;
+      });
+
+      igButton.addEventListener('click', function() {
+        window.open(igURL);
+      });
+    </script>
+    <script>
+      const sgButton = document.getElementById('sgButton');
+      const originalText = sgButton.textContent;
+      const hoverText = 'click here to discover more of SG';
+      const sgURL = 'https://www.visitsingapore.com/travel-tips/travelling-to-singapore/itineraries/'
+      sgButton.addEventListener('mouseenter', function() {
+        sgButton.textContent = hoverText;
+      });
+
+      sgButton.addEventListener('mouseleave', function() {
+        sgButton.textContent = originalText;
+      });
+
+      sgButton.addEventListener('click', function() {
+        window.open(sgURL);
+      });
+    </script>
+  </body>
+</html>

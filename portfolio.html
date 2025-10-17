@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title></title>
+    <link rel='stylesheet' href="styles.css">
+</head>
+    <body>
+    <nav class="navbar">
+      <h1 class="logo">
+        <a href="index.html">VISHAL'S LOFT</a>
+      </h1>
+      <ul class="nav-list">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="resume.html">RESUME</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+    <main>
+    <h1 class="page-title"></h1>
+    <p>Glad to see you're interested in my portfolio! Apart from this awesome loft I made, here's a list of personal projects I've worked over the years to convince people I actually love coding.</p>
+    <div class="floating-tile">
+        <img 
+            src="Workoutly.png" 
+            alt="Vishal's Personal Logo" 
+            class="tile-image" 
+        />
+        <div class="tile-text">
+          <h2 class="tile-heading">Workoutly!</h2>
+          <p>
+            Don't let the simple terminal based UI fool you into thinking this is "hello world" code. Workoutly is armed with LLaMA 3 (Meta's version of ChatGPT) to provide you a personalized workout plan based on your goal, preferences, disabilities, and illnesses.
+            And yes, it dynamically chooses your target muscle depending on which muscle groups you haven't targetted. If that doesn't motivate you enough, Workoutly gamifies your workout routine by calculating XP for every workout you complete.
+          </p>
+          </div>
+        </div>
+      </div>
+      <div class="floating-tile">
+        <img 
+            src="HDP.png" 
+            alt="Vishal's Personal Logo" 
+            class="tile-image" 
+        />
+        <div class="tile-text">
+          <h2 class="tile-heading">HDP (Heart Disease Predictor)</h2>
+          <p>
+            HDP (Heart Disease Predictor), in essence, is a long Jupyter Notebook that predicts whether a person would have heart disease based on their age, sex, cholestrol, resting ECG, thalach (max HR) and much more. This particular snippet of the HDP shows me comparing the accuracy of different regression models (and my tuning process in achieving higher accuracy). You wouldn't want your predictions to be inaccurate while predicting heart disease right? Anyway, this project was easily one of the most time consuming projects I've made in my entire life. The reason why I haven't ended up with using Logistic Regression was that while it ended up with the highest accuracy score, the Logistic Regression model had low potential for tuning. Ultimately, I ended up choosing RandomForestRegressor by tuning it with RandomizedSearchCV to achieve a respectable accuracy score of 87%.
+          </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">"2025 Vishal's Loft | No Rights Reserved"</footer>
+    </body> 
+</html>
