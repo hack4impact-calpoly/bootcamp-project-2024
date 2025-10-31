@@ -25,3 +25,22 @@ const blogs: Blog[] = [
     slug: "learning-typescript"
   }
 ];
+
+document.addEventListener('DOMContentLoaded', () => { // safety measure 
+  const container = document.getElementById('blog-container');
+  if (container) {
+    blogs.forEach((blog) => {
+      const div = document.createElement('div');
+      div.className = 'blog-card';
+      div.innerHTML = `
+  <a href="./blogs/${blog.slug}.html" class="blog-link">
+    <h2>${blog.title}</h2>
+    <p>${blog.date}</p>
+    <img src="${blog.image}" alt="${blog.imageAlt}">
+    <p>${blog.description}</p>
+  </a>
+      `;
+      container.appendChild(div);
+    });
+  }
+});
