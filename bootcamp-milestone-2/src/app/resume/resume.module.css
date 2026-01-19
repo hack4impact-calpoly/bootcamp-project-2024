@@ -1,0 +1,41 @@
+  .resumeLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #efd1e4;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  }
+
+  .body {
+    background-color: rgb(245, 231, 255);
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main {
+    padding: 0 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sectionTitle {
+    font-size: 30px;
+    color: rgb(129, 0, 221);
+  }
+  .entryTitle {
+    color: rgb(169, 58, 248);
+  }
+
+  .pageTitle{
+    font-size: 40px;
+    color: rgb(108, 6, 181);
+  }
+

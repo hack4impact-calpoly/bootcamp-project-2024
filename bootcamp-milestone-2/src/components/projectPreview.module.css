@@ -1,0 +1,108 @@
+.projectLayout {
+    align-items: center;
+    height: min-content;
+    
+} 
+    
+.project{
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #efd1e4;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      width: auto;
+      height: min-content;
+    
+      /* Debug border */
+      /* border: 2px solid blue; */
+}
+    
+    .itemLink{
+      width: 70%;
+    
+      /* Debug border */
+      /* border: 2px solid red; */
+    }
+    .project:hover{
+      border: 2px solid black;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      opacity: 100%;
+    }
+    .projectImage{
+      max-width: 40%;
+      border-radius: 3px;
+      margin: 20px;
+      border: 2px solid black;
+    
+      /* Debug border */
+      /* border: 2px solid black; */
+    }
+  
+    .projectImageImg{
+      max-width: 100%;
+    }
+  
+    
+    .projectDetails{
+      display: flex;
+      width: 30%;
+      height: 400px;
+      flex-shrink: 1;
+      margin: 20px;
+      line-height: 1.5;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    
+      /* Debug border */
+      /* border: 2px solid green; */
+    }
+    
+    .projectDetailsA {
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    
+    .projectDetailsA:hover {
+      color: var(--cg-purple);
+      text-decoration: underline;
+    }
+    
+    .projectDetailsText {
+      font-size: 15px;
+      line-height: 1.5;
+      padding: 20px;
+      color: rgb(169, 58, 248);
+    }
+    
+    .projectName {
+      font-weight: bold;
+      font-size: 30px;
+      color: rgb(142, 35, 218);
+    }
+
+    .projectLink{
+        text-decoration: underline;
+    }
+
+    .projectComments{
+      display: flex;
+      width: 30%;
+      height: auto;
+      flex-shrink: 1;
+      margin: 20px;
+      line-height: 1.5;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .commentHead{
+      font-weight: 400;
+      font-size: 25px;
+      color: rgb(142, 35, 218);
+    }

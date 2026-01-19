@@ -1,0 +1,45 @@
+.main {
+    padding: 0 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pageTitle{
+    font-size: 40px;
+    color: rgb(108, 6, 181);
+  }
+
+  .label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: rgb(129, 0, 221);
+  }
+  
+  .text{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #efd1e4;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  .submit {
+    background-color: #efd1e4;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  /* Add some spacing to the form */
+  .form {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .status{
+    font-size: 20px;
+  }

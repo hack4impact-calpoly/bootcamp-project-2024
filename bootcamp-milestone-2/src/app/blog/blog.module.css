@@ -1,0 +1,39 @@
+.main {
+    padding: 0 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pageTitle{
+    font-size: 40px;
+    color: rgb(108, 6, 181);
+  }
+
+  .main {
+    padding: 0 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h1 {
+    font-size: 40px;
+    color: rgb(108, 6, 181);
+  }
+
+  .h5 {
+    font-size: 25px;
+    color: rgb(108, 6, 181);
+  }
+
+  .image{
+    margin: 10px;
+  }
+
+  .comments {
+    padding: 20px;
+    min-width: 300px;
+  }

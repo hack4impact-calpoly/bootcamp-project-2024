@@ -1,0 +1,35 @@
+.main {
+    padding: 0 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h1 {
+    font-size: 40px;
+    color: rgb(108, 6, 181);
+  }
+
+  .blog{
+      padding: 20px;
+      background-color: #efd1e4;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      width: auto;
+  }
+
+  .blog:hover{
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 100%;
+  }
+
+  .text{
+    padding:10px;
+  }
+
+  .date{
+    text-align: right;
+    padding: 2px;
+  }
